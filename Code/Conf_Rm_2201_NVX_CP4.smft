@@ -18,8 +18,7 @@
       <Device Model="DM-NVX-36xC" DeviceId="11" Name="ENC-13 Spare IN"/>
       <Device Model="DM-NVX-36xC" DeviceId="12" Name="ENC-14 CAM1"/>
       <Device Model="DM-NVX-36xC" DeviceId="13" Name="ENC-15 VTC IN"/>
-      <Device Model="DM-NVX-36xC" DeviceId="14" Name="ENC-16 Spare IN"/>
-      <Device Model="DM-NVX-36x" DeviceId="15" Name="ENC-17 Air Server IN"/>
+      <Device Model="DM-NVX-36x" DeviceId="14" Name="ENC-16 AirMedia"/>
       <Device Model="DM-NVX-35xC" DeviceId="20" Name="DEC-01 AUDIO"/>
       <Device Model="DM-NVX-36xC" DeviceId="21" Name="DEC-02 MEDIAPORT"/>
       <Device Model="DM-NVX-36xC" DeviceId="22" Name="DEC-03 WP1Input1"/>
@@ -27,7 +26,8 @@
       <Device Model="DM-NVX-36xC" DeviceId="24" Name="DEC-05 WP1Input3"/>
       <Device Model="DM-NVX-36xC" DeviceId="25" Name="DEC-06 WP1Input4"/>
       <Device Model="DM-NVX-36xC" DeviceId="26" Name="DEC-07 Stream Out"/>
-      <Device Model="DM-NVX-36x" DeviceId="27" Name="DEC-08 DISP1"/>
-      <Device Model="DM-NVX-36x" DeviceId="28" Name="DEC-09 Prj1"/>
+      <Device Model="DM-NVX-36xC" DeviceId="27" Name="DEC-08 Stream Out"/>
+      <Device Model="DM-NVX-36x" DeviceId="28" Name="DEC-09 DISP1"/>
+      <Device Model="DM-NVX-36x" DeviceId="29" Name="DEC-10 Prj1"/>
    </Network>
 </Device>
