@@ -1,0 +1,217 @@
+#CATEGORY "46" "Vault"
+#DEFAULT_VOLATILE
+#ENABLE_STACK_CHECKING
+#ENCODING_ASCII
+#USER_SIMPLSHARP_LIBRARY "ConfigSystem"
+
+DIGITAL_INPUT Load, Save, _SKIP_;
+STRING_INPUT OverrideStorageLocation[50];
+STRING_INPUT OverrideProgramName[50];
+STRING_INPUT OverrideFileName[50];
+STRING_INPUT OverrideEncoding[50];
+DIGITAL_OUTPUT LoadingFB, SavingFB, _SKIP_, FileLoaded, FileSaved, FileMissing, FileInvalid, UnsavedChanges;
+STRING_OUTPUT FileMessage;
+
+STRING_PARAMETER _SKIP_, _SKIP_, _SKIP_, _SKIP_, _SKIP_, _SKIP_, _SKIP_, _SKIP_, _SKIP_, _SKIP_, 
+File_Name[30], Storage_Location[10], Program_Name[25], File_Mode[2], File_Encoding[50];
+
+#BEGIN_PARAMETER_PROPERTIES File_Name
+   propValidUnits = unitString;
+   propDefaultUnit = unitString;
+   propDefaultValue = "configsystem.json";
+   propShortDescription = "config system file name";
+#END_PARAMETER_PROPERTIES
+
+#BEGIN_PARAMETER_PROPERTIES Storage_Location
+   propValidUnits = unitString;
+   propDefaultUnit = unitString;
+   propDefaultValue = "User";
+   propList = { "NVRAM" , "NVRAM" } , { "CF0" , "Compact Flash" } , { "RM" , "Removable Media (USB)" }  , 
+   { "RM2" , "Removable Media 2 (USB)" }  ,{ "MMC" , "Multimedia Card" } , { "USER" , "User" };
+#END_PARAMETER_PROPERTIES
+
+#BEGIN_PARAMETER_PROPERTIES Program_Name
+   propValidUnits = unitString;
+   propDefaultUnit = unitString;
+   propDefaultValue = "Main";
+#END_PARAMETER_PROPERTIES
+
+#BEGIN_PARAMETER_PROPERTIES File_Mode
+   propValidUnits = unitString;
+   propDefaultUnit = unitString;
+   propDefaultValue = "RW";
+   propList = { "R" , "Read" } , { "W" , "Write" } , { "RW" , "Read-Write" };
+#END_PARAMETER_PROPERTIES
+
+#BEGIN_PARAMETER_PROPERTIES File_Encoding
+   propValidUnits = unitString;
+   propDefaultUnit = unitString;
+   propDefaultValue = "us-ascii";
+   propList = { "us-ascii" , "ASCII" } , { "utf-8" , "UTF8" } ,
+   { "utf-16" , "UNICODE" }, { "iso-8859-1", "ISO-8859-1" };
+#END_PARAMETER_PROPERTIES
+
+FileManager manager;
+             
+STRING cLocalPath[50];
+STRING oStorageLocation[50];
+STRING oProgramName[50];
+STRING oFileName[50];
+
+FUNCTION SetFilePath()
+{
+	STRING lStorageLocation[50];
+	STRING lProgramName[50];
+	STRING lFileName[50];
+    
+	IF(LEN(oStorageLocation) > 0)
+    lStorageLocation = oStorageLocation;
+	ELSE
+    lStorageLocation = Storage_Location;
+
+	IF(LEN(oProgramName) > 0)
+    lProgramName = oProgramName;
+	ELSE
+    lProgramName = Program_Name;
+
+	IF(LEN(oFileName) > 0)
+    lFileName = oFileName;
+	ELSE
+    lFileName = File_Name;
+
+	// Set up file names
+	IF(Program_Name != "") cLocalPath = "\\" + lStorageLocation + "\\" + lProgramName + "\\" + lFileName;
+	ELSE cLocalPath = "\\" + lStorageLocation + "\\" + lFileName;
+	
+	manager.Initialize(cLocalPath);
+}
+FUNCTION ModuleInitialize()
+{
+  manager.SetMode(File_Mode);
+  SetFilePath();
+  manager.SetEncoding(File_Encoding);
+
+  RegisterEvent(manager, OnLoadingStatusChanged, OnLoadingStatusChangedHandler);
+  RegisterEvent(manager, OnValuesChanged, OnValuesChangedHandler);
+}
+
+FUNCTION SendConfigMessage ( STRING message )
+{
+    MAKESTRING(FileMessage, "%s", message);
+}
+PUSH Load
+{
+	manager.LoadRequest();
+}
+
+PUSH Save
+{
+	manager.SaveRequest();
+}
+
+CHANGE OverrideStorageLocation
+{
+	oStorageLocation = OverrideStorageLocation;
+	SetFilePath();
+}
+
+CHANGE OverrideProgramName
+{
+	oProgramName = OverrideProgramName;
+	SetFilePath();
+}
+
+CHANGE OverrideFileName
+{
+	oFileName = OverrideFileName;
+	SetFilePath();
+}
+
+CHANGE OverrideEncoding
+{
+    manager.SetEncoding(OverrideEncoding);
+}
+
+EVENTHANDLER OnLoadingStatusChangedHandler(FileManager sender, FileStatusEventArgs args)
+{
+    if(args.LoadingComplete = 1)
+    {
+        SendConfigMessage("Config Loaded");
+        FileLoaded = 1;
+    }
+    else
+    {
+        FileLoaded = 0;        
+    }
+    
+    if(args.SaveComplete = 1)
+    {
+        SendConfigMessage("Config Saved");      
+        FileSaved = 1;
+    }
+    else
+    {
+        FileSaved = 0;        
+    }
+    
+    if(args.NonexistentConfig = 1)
+    {
+        SendConfigMessage("Config File Missing");
+        FileMissing = 1;
+    }
+    else
+    {
+        FileMissing = 0;        
+    }
+    
+    if(args.InvalidConfig = 1)
+    {
+        SendConfigMessage("Config File Invalid");
+        FileInvalid = 1;
+    }
+    else
+    {
+        FileInvalid = 0;        
+    }
+    
+    if(args.LoadingInProgress = 1)
+    {
+        SendConfigMessage("Config Beginning Load");
+        LoadingFB = 1;
+    }
+    else
+    {
+        LoadingFB = 0;        
+    }
+    
+    if(args.SavingInProgress = 1)
+    {
+        SendConfigMessage("Config Beginning Save");
+        SavingFB = 1;
+    }
+    else
+    {
+        SavingFB = 0;        
+    }
+
+    UnsavedChanges = 0;
+}
+
+EVENTHANDLER OnValuesChangedHandler(FileManager sender, EventArgs args)
+{
+    SendConfigMessage("Values have Changed");
+	FileLoaded = 0;
+    FileSaved = 0;
+	FileMissing = 0;
+    FileInvalid = 0;
+	UnsavedChanges = 1;
+}
+
+Function Main()
+{
+    WaitForInitializationComplete();
+
+    ModuleInitialize();
+
+}
+

@@ -1,0 +1,48 @@
+#DEFINE_CONSTANT MAX_PROPERTIES 32
+#CATEGORY "46" "Vault"
+#ANALOG_SERIAL_EXPAND InputsWithOutputs
+#DEFAULT_VOLATILE
+#ENABLE_STACK_CHECKING
+#ENCODING_ASCII
+#USER_SIMPLSHARP_LIBRARY "ConfigSystem"
+STRING_INPUT  _SKIP_, _SKIP_, Value[MAX_PROPERTIES][254];
+STRING_OUTPUT _SKIP_, _SKIP_, ValueFB[MAX_PROPERTIES];
+STRING_PARAMETER ManagerName[50], ValueName[50];
+#BEGIN_PARAMETER_PROPERTIES ManagerName
+   propValidUnits = unitString;
+   propDefaultUnit = unitString;
+   propDefaultValue = "SystemConfig";
+   propShortDescription = "Name of the Config File Manager.";
+#END_PARAMETER_PROPERTIES
+
+#BEGIN_PARAMETER_PROPERTIES ValueName
+   propValidUnits = unitString;
+   propDefaultUnit = unitString;
+   propDefaultValue = "BlockSerial";
+   propShortDescription = "Name of this setting.";
+#END_PARAMETER_PROPERTIES
+
+ConfigValue theConfig;
+FUNCTION ModuleInitialize()
+{
+	theConfig.Register(ManagerName, ValueName, 1);
+
+	RegisterEvent(theConfig, OnValueChanged, onValueChangedHandler);
+}
+CHANGE Value
+{
+	theConfig.SetBlockSerial(GetLastModifiedArrayIndex(), Value[GetLastModifiedArrayIndex()]);
+}
+EVENTHANDLER onValueChangedHandler(ConfigValue sender, ConfigEventArgs args)
+{
+  MAKESTRING(ValueFB[args.ValueIndex], "%s", args.ValueAsSerial());
+}
+
+Function Main()
+{
+    WaitForInitializationComplete();
+
+    ModuleInitialize();
+
+} 
+

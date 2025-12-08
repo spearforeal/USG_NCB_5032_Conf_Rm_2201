@@ -1,0 +1,92 @@
+#SYMBOL_NAME "SSHClient"
+#DEFAULT_VOLATILE
+#ENABLE_STACK_CHECKING
+#ENABLE_TRACE
+#USER_SIMPLSHARP_LIBRARY "SSHClientDriver"
+
+DIGITAL_INPUT _SKIP_;    
+DIGITAL_INPUT Use_Parameters;
+DIGITAL_INPUT _SKIP_;
+DIGITAL_INPUT Initialize, Connect, Disconnect, Debug, _SKIP_;
+STRING_INPUT tx$[250], _SKIP_;
+STRING_INPUT Hostname_Override[50], Username_Override[64], Password_Override[64], Debugname_Override[64];
+ANALOG_INPUT _SKIP_, Port_Override, _SKIP_, _SKIP_;
+STRING_PARAMETER _SKIP_, _SKIP_, _SKIP_,_SKIP_,_SKIP_,_SKIP_,_SKIP_,_SKIP_,_SKIP_;
+STRING_PARAMETER _SKIP_, _SKIP_, _SKIP_,_SKIP_,_SKIP_,_SKIP_,_SKIP_,_SKIP_,_SKIP_;
+STRING_PARAMETER Hostname_Parameter[50], Username_Parameter[64], Password_Parameter[64], Debugname_Parameter[64];
+INTEGER_PARAMETER Port_Parameter;
+
+DIGITAL_OUTPUT Initialized_fb, Connected_fb;
+STRING_OUTPUT _SKIP_,_SKIP_,_SKIP_, rx$, _SKIP_; 
+
+integer connected;
+integer method;
+SshClientDevice client;
+function RegisterDelegates()
+{
+	RegisterDelegate(client, InitializedData, InitializedDataHandler);
+	RegisterDelegate(client, ConnectionState, ConnectionStateHandler);
+	RegisterDelegate(client, ReceivedData, ReceivedDataHandler);
+	
+}
+callback function InitializedDataHandler(integer state)
+{
+	Initialized_fb = state;
+}
+callback function ConnectionStateHandler(integer state)
+{
+	connected = state;
+	Connected_fb = state;
+}
+callback function ReceivedDataHandler(string data)
+{
+	rx$ = data;
+}
+PUSH Initialize
+{
+	if(method = 1)
+	{
+		client.Initialize(Hostname_Parameter, Port_Parameter, Username_Parameter, Password_Parameter, Debugname_Parameter);
+	}
+	else if (method = 0)
+	{
+		client.Initialize(Hostname_Override, Port_Override, Username_Override, Password_Override, Debugname_Override);
+	}
+	
+}
+PUSH Connect
+{
+	client.Connect();
+}
+PUSH Disconnect
+{
+	client.Disconnect();
+}
+PUSH Debug
+{
+	client.DebugEnable = 1;
+}
+RELEASE Debug
+{
+	client.DebugEnable = 0;
+}
+PUSH Use_Parameters
+{
+	method = 1;
+}
+RELEASE Use_Parameters
+{
+	method = 0;
+}
+THREADSAFE Change tx$
+{
+	if(connected)
+	{
+		client.SendCommand(tx$);
+	}
+}
+function Main()
+{
+	WaitForInitializationComplete();
+	RegisterDelegates();
+}

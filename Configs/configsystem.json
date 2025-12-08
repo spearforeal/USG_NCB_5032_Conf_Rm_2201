@@ -1,0 +1,180 @@
+{
+    "SystemConfig": {   
+        "SystemName": ["NCB_Divisible_Conf_4115"],
+        "CustomerNumber": [
+            "3248"
+        ],
+        "SiteNumber": [
+            "59288311"
+        ],
+        "AutoshutdownEnable":["True"],
+        "DSP01IpAddress":["10.174.132.35"],
+        "PasswordInUse":["false"],
+        "PasswordOnMode7":[
+            "True"
+        ],
+        "UserPassword":["2234"],
+        "USBSwitcherHostname":[""],
+        "USBSwitcherUsername": [""],
+        "USBSwitcherPassword": [""],
+        "USBSwitcherDebugname": [""],
+        "USBSwitcherPortnumber": [2234],
+        "Camera1IpAddress":["10.174.132.46"],
+        "Camera1UserName":["admin"],
+        "Camera1Password":["8012662428"],
+        "Camera2IpAddress":[""],
+        "Camera2UserName":["admin"],
+        "Camera2Password":["8012662428"],
+        "Camera3IpAddress":[""],
+        "Camera3UserName":["Admin"],
+        "Camera3Password":["Password"],
+        "WindowProc1Hostname":["10.174.132.210"],
+        "WindowProc1Username":["admin"],
+        "WindowProc1Password":["8012662428"],
+        "WindowProc1Debugname":["MGP 641 xi"],
+        "WindowProc1Portnumber":[22023],
+        "WindowProc2Hostname":["10.60.4.219"],
+        "WindowProc2Username":["admin"],
+        "WindowProc2Password":["8012662428"],
+        "WindowProc2Debugname":["MGP 641 xi"],
+        "WindowProc2Portnumber":[22023],
+        "PresetManager1FileName":["roomapresets"],
+        "PresetManager2FileName":["roombpresets"],
+        "PresetManager3FileName":["roomabpresets"],
+
+        "ModeVisibility": [
+            "true",
+            "true",
+            "true",
+            "true",
+            "true",
+            "false",
+            "true"
+        ],
+        "ModeIcons": [
+            "Connector Plate",
+            "TV",
+            "Camera",
+            "Shades",
+            "Volume",
+            "Phone",
+            "Gear"
+        ],
+        "AdvanceModeVisibility":[
+            "true",
+            "false",
+            "false",
+            "false",
+            "false"
+        ],
+        "AdvanceModeIcons":[
+            "Gear",
+            "Gear",
+            "Gear",
+            "Gear",
+            "Gear"
+        ],
+        "AudioControlSubMenuVisibility":[
+            "false",
+            "false",
+            "false",
+            "false",
+            "false"
+        ],
+        "SourceIcons": [
+            "Connector Plate",
+            "Connector Plate",
+            "Wireless Device",
+            "Media Server",
+            "Camera",
+            "Camera",
+            "Connector",
+            "Laptop",
+            "Laptop",
+            "Laptop",
+            "Laptop",
+            "Laptop",
+            "Laptop",
+            "Media Server",
+            "Camera",
+            "Camera",
+            "Connector",
+            "Laptop",
+            "Laptop",
+            "Laptop",
+            "Laptop",
+            "Laptop",
+            "Laptop",
+            "Laptop",
+            "Laptop"
+        ],
+        "DisplayIsProjector":[
+            "false",
+            "False",
+            "true",
+            "False",
+            "False",
+            "False",
+            "False",
+            "False",
+            "False",
+            "False"
+        ],
+        "DisplayPresetVisibility":[
+            "false",
+            "false",
+            "false",
+            "false",
+            "false",
+            "false",
+            "false",
+            "false",
+            "false",
+            "false"
+        ],
+        "ShadeIcon":[
+            "Up Alt",
+            "Stop",
+            "Down Alt",
+            "Stop",
+            "Stop",
+            "Stop"
+        ],
+        "CameraCtrlVisibility":[
+            "True",
+            "True",
+            "True",
+            "True",
+            "True",
+            "True"
+        ],
+        "CameraCtrlIcon":[
+            27,
+            27,
+            61,
+            61,
+            14,
+            99
+        ],
+        "CameraPresetVisibility":[
+            "True",
+            "True",
+            "True",
+            "True"
+        ],
+        "AdvancePresetVisiblity":[
+            "true",
+            "true",
+            "true",
+            "true",
+            "true"
+        ],
+        "RoutingPresetVisibility":[
+            "True",
+            "True",
+            "True",
+            "True",
+            "True"
+        ]
+	}
+}

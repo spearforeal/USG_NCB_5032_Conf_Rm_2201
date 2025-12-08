@@ -1,0 +1,60 @@
+#DEFINE_CONSTANT MAX_PROPERTIES 32
+#CATEGORY "46" "Vault"
+#ANALOG_SERIAL_EXPAND AllWithAny
+#DEFAULT_VOLATILE
+#ENABLE_STACK_CHECKING
+#ENCODING_ASCII
+#USER_SIMPLSHARP_LIBRARY "ConfigSystem"
+STRING_INPUT  _SKIP_, _SKIP_, Value[MAX_PROPERTIES][254];
+STRING_OUTPUT _SKIP_, _SKIP_, ValueFB[MAX_PROPERTIES];
+STRING_PARAMETER ManagerName[50], _SKIP_, PropertyName[MAX_PROPERTIES][50];
+#BEGIN_PARAMETER_PROPERTIES ManagerName
+   propValidUnits = unitString;
+   propDefaultUnit = unitString;
+   propDefaultValue = "SystemConfig";
+   propShortDescription = "Name of the Config File Manager.";
+#END_PARAMETER_PROPERTIES
+
+#BEGIN_PARAMETER_PROPERTIES PropertyName
+   propValidUnits = unitString;
+   propDefaultUnit = unitString;
+   propDefaultValue = "";
+   propShortDescription = "Name of this property.";
+#END_PARAMETER_PROPERTIES
+ConfigValueGroup theConfig;
+STRING ChangedProperties[MAX_PROPERTIES][50];
+INTEGER ChangedCount;
+INTEGER GlobalCounter;
+FUNCTION ModuleInitialize()
+{
+	INTEGER i;
+           
+	ChangedCount = 0;
+
+	for(i = 1 to MAX_PROPERTIES)
+	{
+		if(LEN(PropertyName[i]) > 0)
+		{
+			theConfig.Register(ManagerName, PropertyName[i], i);
+		}
+	}
+
+	RegisterEvent(theConfig, OnValueChanged, onValueChangedHandler);
+}
+CHANGE Value
+{
+  // PropertyName[1] = GroupSerial1, Value[1] = RandomString1
+	theConfig.SetSingleSerial(PropertyName[GetLastModifiedArrayIndex()], Value[GetLastModifiedArrayIndex()]);
+}
+
+EVENTHANDLER onValueChangedHandler(ConfigValueGroup sender, ConfigEventArgs e)
+{
+  MAKESTRING(ValueFB[e.PropIndex], "%s", e.ValueAsSerial());
+}
+Function Main()
+{
+    WaitForInitializationComplete();
+
+    ModuleInitialize();
+
+}

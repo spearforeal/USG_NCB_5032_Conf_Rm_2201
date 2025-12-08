@@ -1,0 +1,46 @@
+#DEFINE_CONSTANT MAX_PROPERTIES 32
+#CATEGORY "46" "Vault"
+#ANALOG_SERIAL_EXPAND InputsWithOutputs
+#DEFAULT_VOLATILE
+#ENABLE_STACK_CHECKING
+#ENCODING_ASCII
+#USER_SIMPLSHARP_LIBRARY "ConfigSystem"
+ANALOG_INPUT _SKIP_, _SKIP_, Value[MAX_PROPERTIES];
+ANALOG_OUTPUT _SKIP_, _SKIP_, Value_fb[MAX_PROPERTIES];
+STRING_PARAMETER ManagerName[50], _SKIP_, ValueName[MAX_PROPERTIES];
+#BEGIN_PARAMETER_PROPERTIES ManagerName
+propValidUnits = unitString;		
+propDefaultUnit = unitString;
+propDefaultValue = "SystemConfig";
+propShortDescription = "Name of the Config File Manager.";
+#END_PARAMETER_PROPERTIES
+#BEGIN_PARAMETER_PROPERTIES ValueName 
+propValidUnits = unitString;		
+propDefaultUnit = unitString;
+propDefaultValue = "BlockAnalog";
+propShortDescription = "Name of this setting.";
+#END_PARAMETER_PROPERTIES
+
+ConfigValue theConfig;
+STRING ChangedProperties[MAX_PROPERTIES][50];
+INTEGER ChangedCount;
+INTEGER GlobalCounter;
+
+FUNCTION ModuleInitialize()
+{
+	theConfig.Register(ManagerName, ValueName, 1);
+	RegisterEvent(theConfig, OnValueChanged, onValueChangedHandler);
+}
+CHANGE Value
+{
+	theConfig.SetBlockAnalog(GetLastModifiedArrayIndex(), Value[GetLastModifiedArrayIndex()]);
+}
+EVENTHANDLER onValueChangedHandler(ConfigValue sender, ConfigEventArgs e)
+{
+	Value_fb[e.ValueIndex] = e.ValueAsAnalog();
+}
+Function Main()
+{
+	WaitForInitializationComplete();
+	ModuleInitialize();
+}

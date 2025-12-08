@@ -1,0 +1,45 @@
+#CATEGORY "46" "Vault"
+#DEFAULT_VOLATILE
+#ENABLE_STACK_CHECKING
+#ENCODING_ASCII
+#USER_SIMPLSHARP_LIBRARY "ConfigSystem"
+ANALOG_INPUT _SKIP_, _SKIP_, Value;
+ANALOG_OUTPUT _SKIP_, _SKIP_, Values_fb;
+STRING_PARAMETER ManagerName[50], ValueName[50];
+
+#BEGIN_PARAMETER_PROPERTIES ManagerName
+propValidUnits = unitString;		
+propDefaultUnit = unitString;
+propDefaultValue = "SystemConfig";
+propShortDescription = "Name of the Config File Manager.";
+#END_PARAMETER_PROPERTIES
+
+#BEGIN_PARAMETER_PROPERTIES ValueName
+propValidUnits = unitString;		
+propDefaultUnit = unitString;
+propDefaultValue = "AnalogValue";
+propShortDescription = "Name of this setting.";
+#END_PARAMETER_PROPERTIES
+
+ConfigValue theConfig;
+
+FUNCTION ModuleInitialize()
+{
+	theConfig.Register(ManagerName, ValueName, 1);
+	RegisterEvent(theConfig, OnValueChanged, onValueChangedHandler);
+	
+}
+CHANGE Value
+{
+	theConfig.SetSingleAnalog(Value);
+}
+EVENTHANDLER onValueChangedHandler(ConfigValue sender, ConfigEventArgs args)
+{
+	Values_fb = args.ValueAsAnalog();
+}
+
+FUNCTION Main()
+{
+	WaitForInitializationComplete();
+	ModuleInitialize();
+}

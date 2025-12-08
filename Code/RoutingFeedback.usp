@@ -1,0 +1,21 @@
+#SYMBOL_NAME "RoutingFeedback"
+#DEFAULT_VOLATILE
+#ENABLE_STACK_CHECKING
+#ENABLE_TRACE
+ANALOG_INPUT Feedback[128];
+STRING_INPUT Input_Names[128][100];
+STRING_OUTPUT Output_Source_fb[128];
+INTEGER x,y;
+CHANGE Feedback
+{
+    x=GetLastModifiedArrayIndex();
+    y=Feedback[x];
+    if(y>0)
+    {
+        Output_Source_fb[x]=Input_Names[y];
+    }
+    Else if(y=0)
+    {
+        Output_Source_fb[x]="No Source";
+    }
+}

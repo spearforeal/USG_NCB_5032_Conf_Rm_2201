@@ -1,0 +1,27 @@
+#SYMBOL_NAME "DestConfig"
+#DEFAULT_VOLATILE
+#ENABLE_TRACE
+DIGITAL_INPUT DestVis[20];
+ANALOG_OUTPUT VisibleCount;
+INTEGER gCount;
+Function Recalc()
+{
+	INTEGER i, c;
+	c = 0;
+	for (i=1 to 20)
+	{
+		if(DestVis[i]) c = c + 1;
+	}
+	gCount = c;
+	VisibleCount = gCount;
+	
+}
+CHANGE DestVis
+{
+	Recalc();
+}
+Function Main()
+{
+	WaitForInitializationComplete();
+	Recalc();
+}

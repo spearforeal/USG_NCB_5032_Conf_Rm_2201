@@ -1,0 +1,33 @@
+<Device Model="CP4">
+   <Network Type="Cresnet" Id="01"/>
+   <Network Type="Ethernet" Id="02">
+      <Device Model="TSW-1070" DeviceId="03"/>
+      <Device Model="TSW-1070" DeviceId="04"/>
+      <Device Model="DM-NVX-E760" DeviceId="05" Name="ENC-01 FB1"/>
+      <Device Model="DM-NVX-E760" DeviceId="06" Name="ENC-02 FB2"/>
+      <Device Model="DM-NVX-E760" DeviceId="07" Name="ENC-03 FB3"/>
+      <Device Model="DM-NVX-E760" DeviceId="08" Name="ENC-04 FB4"/>
+      <Device Model="DM-NVX-E760" DeviceId="09" Name="ENC-05 FB5"/>
+      <Device Model="DM-NVX-E760" DeviceId="0A" Name="ENC-06 FB6"/>
+      <Device Model="DM-NVX-E760" DeviceId="0B" Name="ENC-07 FB7"/>
+      <Device Model="DM-NVX-E760" DeviceId="0C" Name="ENC-08 FB8"/>
+      <Device Model="DM-NVX-E760" DeviceId="0D" Name="ENC-09 FB9"/>
+      <Device Model="DM-NVX-E760" DeviceId="0E" Name="ENC-10 FB10"/>
+      <Device Model="DM-NVX-E760" DeviceId="0F" Name="ENC-11 FB11"/>
+      <Device Model="DM-NVX-E760" DeviceId="10" Name="ENC-12 WB1"/>
+      <Device Model="DM-NVX-36xC" DeviceId="11" Name="ENC-13 Spare IN"/>
+      <Device Model="DM-NVX-36xC" DeviceId="12" Name="ENC-14 CAM1"/>
+      <Device Model="DM-NVX-36xC" DeviceId="13" Name="ENC-15 VTC IN"/>
+      <Device Model="DM-NVX-36xC" DeviceId="14" Name="ENC-16 Spare IN"/>
+      <Device Model="DM-NVX-36x" DeviceId="15" Name="ENC-17 Air Server IN"/>
+      <Device Model="DM-NVX-35xC" DeviceId="20" Name="DEC-01 AUDIO"/>
+      <Device Model="DM-NVX-36xC" DeviceId="21" Name="DEC-02 MEDIAPORT"/>
+      <Device Model="DM-NVX-36xC" DeviceId="22" Name="DEC-03 WP1Input1"/>
+      <Device Model="DM-NVX-36xC" DeviceId="23" Name="DEC-04 WP1Input2"/>
+      <Device Model="DM-NVX-36xC" DeviceId="24" Name="DEC-05 WP1Input3"/>
+      <Device Model="DM-NVX-36xC" DeviceId="25" Name="DEC-06 WP1Input4"/>
+      <Device Model="DM-NVX-36xC" DeviceId="26" Name="DEC-07 Stream Out"/>
+      <Device Model="DM-NVX-36x" DeviceId="27" Name="DEC-08 DISP1"/>
+      <Device Model="DM-NVX-36x" DeviceId="28" Name="DEC-09 Prj1"/>
+   </Network>
+</Device>
