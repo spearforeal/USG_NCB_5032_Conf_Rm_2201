@@ -8,7 +8,7 @@
             "59288311"
         ],
         "AutoshutdownEnable":["True"],
-        "DSP01IpAddress":["10.174.132.35"],
+        "DSP01IpAddress":["10.174.132.52"],
         "PasswordInUse":["false"],
         "PasswordOnMode7":[
             "True"
