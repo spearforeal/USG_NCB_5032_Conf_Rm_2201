@@ -105,6 +105,13 @@ FUNCTION SendPoll()
 	ck2 = 255 ^ (b1);
 	MakeString(Tx$, "%c%c%c%c%c", (b0 & 255),(b1 & 255), (b2 & 255), (ck1 & 255),(ck2 & 255));
 }
+FUNCTION RequestPoll()
+{
+	WAIT(10, PollAfterAction)
+	{
+		SendPoll();
+	}
+}
 
 FUNCTION SendScene(INTEGER n)
 {
@@ -259,6 +266,7 @@ PUSH Poll
 CHANGE Channel_ID
 {
 	SetChannel(Channel_ID);
+	RequestPoll();
 }
 CHANGE Rx$
 {
@@ -269,7 +277,11 @@ PUSH Scene
 {
 	INTEGER idx;
 	idx = GetLastModifiedArrayIndex();
-	IF ((idx >= 1) && (idx <= 4)) { SendScene(idx); }
+	IF ((idx >= 1) && (idx <= 4)) 
+	{
+		SendScene(idx); 
+		RequestPoll();
+	}
 }
 
 PUSH Up
@@ -283,6 +295,7 @@ RELEASE Up
 	holdUp = 0;
 	CancelWait(UpStart);
 	CancelWait(UpRepeat);
+	RequestPoll();
 }
 
 PUSH Down
@@ -296,6 +309,7 @@ RELEASE Down
 	holdDown = 0;
 	CancelWait(DownStart);
 	CancelWait(DownRepeat);
+	RequestPoll();
 }
 FUNCTION KillWaits()
 {
@@ -310,13 +324,14 @@ PUSH AllOn
 {
 	KillWaits();
 	AllOnFunc();
+	RequestPoll();
 	
 }
 PUSH AllOff
 {
 	KillWaits();
 	AllOffFunc();
-	
+	RequestPoll();
 }
 PUSH Debug
 {
