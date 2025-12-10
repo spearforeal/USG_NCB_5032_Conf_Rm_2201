@@ -260,6 +260,11 @@ CHANGE Channel_ID
 {
 	SetChannel(Channel_ID);
 }
+CHANGE Rx$
+{
+	RxBuff$ = RxBuff$ + Rx$;
+	ProcessRx();
+}
 PUSH Scene
 {
 	INTEGER idx;
