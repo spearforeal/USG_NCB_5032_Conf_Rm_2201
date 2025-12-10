@@ -171,7 +171,7 @@ FUNCTION HandlePollResponse(STRING packet$)
 	Channel_On[6] = ((b1 & 32) <> 0);
 	Channel_On[7] = ((b1 & 64) <> 0);
 	Channel_On[8] = ((b1 & 128) <> 0);
-	for(i = 1 to 16)
+	for(i = 1 TO 16)
 	{
 		level = GetPollDataByte(packet$, i + 1);
 		Channel_Level[i] = level;
@@ -212,22 +212,22 @@ FUNCTION ProcessRx()
 			{
 				return;
 			}
-			pktLen = GetByte(RxBuff$, 2);
-			if(buflen < pktLen)
-			{
-				return;
-			}
-			packet$ = Mid(RxBuff$, 1, pktLen);
-			RxBuff$ = Mid(RxBuff$, pktLen + 1, buflen - pktLen);
-			subject = GetByte(packet$, 3);
-			if(subject = 4)
-			{
-				HandleAck(packet$);
-			}
-			ELSE IF (subject = 13)
-			{
-				HandlePollResponse(packet$);
-			}
+		}
+		pktLen = GetByte(RxBuff$, 2);
+		if(buflen < pktLen)
+		{
+			return;
+		}
+		packet$ = Mid(RxBuff$, 1, pktLen);
+		RxBuff$ = Mid(RxBuff$, pktLen + 1, buflen - pktLen);
+		subject = GetByte(packet$, 3);
+		if(subject = 4)
+		{
+			HandleAck(packet$);
+		}
+		ELSE IF (subject = 13)
+		{
+			HandlePollResponse(packet$);
 		}
 	}
 }
