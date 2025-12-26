@@ -56,7 +56,11 @@ PUSH Initialize
 }
 PUSH Connect
 {
-	client.Connect();
+	if(connected = 0)
+	{
+		client.Connect();
+		
+	}
 }
 PUSH Disconnect
 {
