@@ -19,7 +19,7 @@
         "USBSwitcherPassword": ["8012662428"],
         "USBSwitcherDebugname": ["USBSW01"],
         "USBSwitcherPortnumber": [2234],
-        "Camera1IpAddress":["10.174.132.46"],
+        "Camera1IpAddress":["10.174.132.51"],
         "Camera1UserName":["admin"],
         "Camera1Password":["8012662428"],
         "Camera2IpAddress":[""],
