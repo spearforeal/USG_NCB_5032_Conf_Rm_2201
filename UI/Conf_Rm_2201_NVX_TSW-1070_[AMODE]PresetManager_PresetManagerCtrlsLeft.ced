@@ -10,7 +10,7 @@ VTProeVer=6.2.02
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_TSW-1070_[AMODE]PresetManager_PresetManagerCtrlsLeft.ced
 Hint=PresetManagerCtrlsLeft (Smart Object ID=39)
-Code=39
+Code=40
 SGControlType=Subpage Reference List Vertical
 SGControlName=PresetManagerCtrlsLeft
 GUID=A2842876-DCFD-4758-BE3A-1932F61FB29F
@@ -240,14 +240,14 @@ OutputList3SigType16=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=39
-CedH=39
+Pp1=40
+CedH=40
 SmartObjId=39d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=39
+H=40
 Tp=1
 HD=TRUE
 DV=39d
@@ -260,7 +260,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=39
+H=40
 Name=Conf_Rm_2201_NVX_TSW-1070_[AMODE]PresetManager_PresetManagerCtrlsLeft.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.

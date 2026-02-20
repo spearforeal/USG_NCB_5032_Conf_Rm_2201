@@ -10,7 +10,7 @@ VTProeVer=6.2.02
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_TSW-1070_[PM]FullScreen_PMFullScreen.ced
 Hint=PMFullScreen (Smart Object ID=41)
-Code=42
+Code=43
 SGControlType=Subpage Reference List Horizontal
 SGControlName=PMFullScreen
 GUID=93F1802F-7641-4489-8DAF-00B2A0C5EE52
@@ -196,14 +196,14 @@ OutputList3SigType14=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=42
-CedH=42
+Pp1=43
+CedH=43
 SmartObjId=41d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=42
+H=43
 Tp=1
 HD=TRUE
 DV=41d
@@ -216,7 +216,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=42
+H=43
 Name=Conf_Rm_2201_NVX_TSW-1070_[PM]FullScreen_PMFullScreen.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.

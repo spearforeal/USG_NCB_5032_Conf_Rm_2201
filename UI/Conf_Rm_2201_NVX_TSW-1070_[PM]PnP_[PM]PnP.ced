@@ -10,7 +10,7 @@ VTProeVer=6.2.02
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_TSW-1070_[PM]PnP_[PM]PnP.ced
 Hint=[PM]PnP (Smart Object ID=46)
-Code=47
+Code=48
 SGControlType=Subpage Reference List Horizontal
 SGControlName=[PM]PnP
 GUID=25C43ACD-389E-4BB3-900A-1E94248FA21B
@@ -208,14 +208,14 @@ OutputList3SigType16=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=47
-CedH=47
+Pp1=48
+CedH=48
 SmartObjId=46d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=47
+H=48
 Tp=1
 HD=TRUE
 DV=46d
@@ -228,7 +228,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=47
+H=48
 Name=Conf_Rm_2201_NVX_TSW-1070_[PM]PnP_[PM]PnP.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.

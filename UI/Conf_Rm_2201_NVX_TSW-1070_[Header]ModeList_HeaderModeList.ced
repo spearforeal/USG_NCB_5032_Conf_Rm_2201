@@ -10,7 +10,7 @@ VTProeVer=6.2.02
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_TSW-1070_[Header]ModeList_HeaderModeList.ced
 Hint=HeaderModeList (Smart Object ID=1)
-Code=15
+Code=16
 SGControlType=Subpage Reference List Horizontal
 SGControlName=HeaderModeList
 GUID=58697165-3057-4D73-8D93-EB7D16A3DA5F
@@ -316,14 +316,14 @@ OutputList3SigType26=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=15
-CedH=15
+Pp1=16
+CedH=16
 SmartObjId=1d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=15
+H=16
 Tp=1
 HD=TRUE
 DV=1d
@@ -336,7 +336,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=15
+H=16
 Name=Conf_Rm_2201_NVX_TSW-1070_[Header]ModeList_HeaderModeList.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.

@@ -10,7 +10,7 @@ VTProeVer=6.2.02
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_TSW-1070_[SYS]RoomMode_RoomModeSelectList.ced
 Hint=RoomModeSelectList (Smart Object ID=49)
-Code=50
+Code=51
 SGControlType=Subpage Reference List Horizontal
 SGControlName=RoomModeSelectList
 GUID=05270B1D-4661-4512-810B-0B0A419A405D
@@ -200,14 +200,14 @@ OutputList3SigType14=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=50
-CedH=50
+Pp1=51
+CedH=51
 SmartObjId=49d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=50
+H=51
 Tp=1
 HD=TRUE
 DV=49d
@@ -220,7 +220,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=50
+H=51
 Name=Conf_Rm_2201_NVX_TSW-1070_[SYS]RoomMode_RoomModeSelectList.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.

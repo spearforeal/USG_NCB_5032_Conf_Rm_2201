@@ -10,7 +10,7 @@ VTProeVer=6.2.02
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_TSW-1070_[MODE]Routing_RoutingPageTitle.ced
 Hint=RoutingPageTitle (Smart Object ID=23)
-Code=12
+Code=13
 SGControlType=Subpage Reference List Horizontal
 SGControlName=RoutingPageTitle
 GUID=3AD6C571-7E9B-41D8-A67C-1C9F8A930E40
@@ -180,14 +180,14 @@ OutputList3SigType13=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=12
-CedH=12
+Pp1=13
+CedH=13
 SmartObjId=23d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=12
+H=13
 Tp=1
 HD=TRUE
 DV=23d
@@ -200,7 +200,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=12
+H=13
 Name=Conf_Rm_2201_NVX_TSW-1070_[MODE]Routing_RoutingPageTitle.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.

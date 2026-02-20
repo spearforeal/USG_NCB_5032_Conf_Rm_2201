@@ -10,7 +10,7 @@ VTProeVer=6.2.02
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_TSW-1070_[MODE]DisplayControl_DisplayControlPresetList.ced
 Hint=DisplayControlPresetList (Smart Object ID=7)
-Code=17
+Code=18
 SGControlType=Subpage Reference List Horizontal
 SGControlName=DisplayControlPresetList
 GUID=685B9797-EA74-4F36-BC02-50E6B0AE1255
@@ -336,14 +336,14 @@ OutputList3SigType22=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=17
-CedH=17
+Pp1=18
+CedH=18
 SmartObjId=7d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=17
+H=18
 Tp=1
 HD=TRUE
 DV=7d
@@ -356,7 +356,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=17
+H=18
 Name=Conf_Rm_2201_NVX_TSW-1070_[MODE]DisplayControl_DisplayControlPresetList.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.

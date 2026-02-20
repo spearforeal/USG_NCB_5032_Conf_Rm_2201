@@ -10,7 +10,7 @@ VTProeVer=6.2.02
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_TSW-1070_[SIDE]ProgramControl_ProgramAudioControl.ced
 Hint=ProgramAudioControl (Smart Object ID=14)
-Code=22
+Code=23
 SGControlType=Subpage Reference List Horizontal
 SGControlName=ProgramAudioControl
 GUID=812B3807-8669-4F09-A9B0-8A8687E59E8F
@@ -240,14 +240,14 @@ OutputList3SigType13=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=22
-CedH=22
+Pp1=23
+CedH=23
 SmartObjId=14d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=22
+H=23
 Tp=1
 HD=TRUE
 DV=14d
@@ -260,7 +260,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=22
+H=23
 Name=Conf_Rm_2201_NVX_TSW-1070_[SIDE]ProgramControl_ProgramAudioControl.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.

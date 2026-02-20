@@ -10,7 +10,7 @@ VTProeVer=6.2.02
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_TSW-1070_[AMODE]PresetManager_WPPresetList.ced
 Hint=WPPresetList (Smart Object ID=40)
-Code=40
+Code=41
 SGControlType=Subpage Reference List Horizontal
 SGControlName=WPPresetList
 GUID=0E7C42E2-6D8A-4CC2-AB25-96966AD22A00
@@ -288,14 +288,14 @@ OutputList3SigType19=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=40
-CedH=40
+Pp1=41
+CedH=41
 SmartObjId=40d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=40
+H=41
 Tp=1
 HD=TRUE
 DV=40d
@@ -308,7 +308,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=40
+H=41
 Name=Conf_Rm_2201_NVX_TSW-1070_[AMODE]PresetManager_WPPresetList.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.

@@ -1,0 +1,44 @@
+#CATEGORY "46" "Vault"
+#DEFAULT_VOLATILE
+#ENABLE_STACK_CHECKING
+#ENCODING_ASCII
+#USER_SIMPLSHARP_LIBRARY "ConfigSystem"
+STRING_INPUT  _SKIP_, _SKIP_, Value[254];
+STRING_OUTPUT _SKIP_, _SKIP_, ValueFB;
+STRING_PARAMETER ManagerName[50], ValueName[50];
+#BEGIN_PARAMETER_PROPERTIES ManagerName
+   propValidUnits = unitString;
+   propDefaultUnit = unitString;
+   propDefaultValue = "SystemConfig";
+   propShortDescription = "Name of the Config File Manager.";
+#END_PARAMETER_PROPERTIES
+
+#BEGIN_PARAMETER_PROPERTIES ValueName
+   propValidUnits = unitString;
+   propDefaultUnit = unitString;
+   propDefaultValue = "SerialValue";
+   propShortDescription = "Name of this setting.";
+#END_PARAMETER_PROPERTIES
+ConfigValue theConfig;
+FUNCTION ModuleInitialize()
+{
+	theConfig.Register(ManagerName, ValueName, 1);
+
+	RegisterEvent(theConfig, OnValueChanged, onValueChangedHandler);
+}
+CHANGE Value
+{
+	theConfig.SetSingleSerial(Value);
+}
+               
+EVENTHANDLER onValueChangedHandler(ConfigValue sender, ConfigEventArgs args)
+{
+	MAKESTRING(ValueFB, "%s", args.ValueAsSerial());
+}
+Function Main()
+{
+    WaitForInitializationComplete();
+
+    ModuleInitialize();
+
+} 

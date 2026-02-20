@@ -10,7 +10,7 @@ VTProeVer=6.2.02
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_TSW-1070_[MODE]Lights&Shade_ShadeControlList.ced
 Hint=ShadeControlList (Smart Object ID=8)
-Code=8
+Code=9
 SGControlType=Subpage Reference List Horizontal
 SGControlName=ShadeControlList
 GUID=4FE4D4F3-3C11-47AF-9CEF-C27C07B0A5E0
@@ -272,14 +272,14 @@ OutputList3SigType18=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=8
-CedH=8
+Pp1=9
+CedH=9
 SmartObjId=8d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=8
+H=9
 Tp=1
 HD=TRUE
 DV=8d
@@ -292,7 +292,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=8
+H=9
 Name=Conf_Rm_2201_NVX_TSW-1070_[MODE]Lights&Shade_ShadeControlList.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
