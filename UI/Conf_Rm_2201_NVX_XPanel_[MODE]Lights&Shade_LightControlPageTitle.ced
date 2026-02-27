@@ -10,7 +10,7 @@ VTProeVer=6.2.02
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]Lights&Shade_LightControlPageTitle.ced
 Hint=LightControlPageTitle (Smart Object ID=29)
-Code=9
+Code=10
 SGControlType=Subpage Reference List Horizontal
 SGControlName=LightControlPageTitle
 GUID=F07318E1-31DA-4FC6-8039-78E9986E1812
@@ -180,14 +180,14 @@ OutputList3SigType13=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=9
-CedH=9
+Pp1=10
+CedH=10
 SmartObjId=29d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=9
+H=10
 Tp=1
 HD=TRUE
 DV=29d
@@ -200,7 +200,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=9
+H=10
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]Lights&Shade_LightControlPageTitle.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.

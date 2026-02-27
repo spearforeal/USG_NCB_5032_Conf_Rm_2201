@@ -10,7 +10,7 @@ VTProeVer=6.2.02
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]Lights&Shade_LightingControlPresetListCombined.ced
 Hint=LightingControlPresetListCombined (Smart Object ID=51)
-Code=10
+Code=11
 SGControlType=Subpage Reference List Horizontal
 SGControlName=LightingControlPresetListCombined
 GUID=5F1EDAC7-9933-449A-8D88-1D3AE0250845
@@ -304,14 +304,14 @@ OutputList3SigType20=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=10
-CedH=10
+Pp1=11
+CedH=11
 SmartObjId=51d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=10
+H=11
 Tp=1
 HD=TRUE
 DV=51d
@@ -324,7 +324,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=10
+H=11
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]Lights&Shade_LightingControlPresetListCombined.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.

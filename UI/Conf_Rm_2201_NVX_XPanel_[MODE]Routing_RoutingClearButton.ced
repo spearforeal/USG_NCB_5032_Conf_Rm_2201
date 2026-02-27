@@ -10,7 +10,7 @@ VTProeVer=6.2.02
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]Routing_RoutingClearButton.ced
 Hint=RoutingClearButton (Smart Object ID=30)
-Code=14
+Code=15
 SGControlType=Subpage Reference List Vertical
 SGControlName=RoutingClearButton
 GUID=537EB28E-98D1-4E62-A526-453D41825549
@@ -196,14 +196,14 @@ OutputList3SigType14=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=14
-CedH=14
+Pp1=15
+CedH=15
 SmartObjId=30d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=14
+H=15
 Tp=1
 HD=TRUE
 DV=30d
@@ -216,7 +216,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=14
+H=15
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]Routing_RoutingClearButton.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.

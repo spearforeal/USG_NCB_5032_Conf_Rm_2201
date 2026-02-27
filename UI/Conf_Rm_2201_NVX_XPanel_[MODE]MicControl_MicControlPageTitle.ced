@@ -10,7 +10,7 @@ VTProeVer=6.2.02
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]MicControl_MicControlPageTitle.ced
 Hint=MicControlPageTitle (Smart Object ID=28)
-Code=26
+Code=27
 SGControlType=Subpage Reference List Horizontal
 SGControlName=MicControlPageTitle
 GUID=C65BCC7F-4D21-43B6-B418-6B3252E41969
@@ -180,14 +180,14 @@ OutputList3SigType13=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=26
-CedH=26
+Pp1=27
+CedH=27
 SmartObjId=28d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=26
+H=27
 Tp=1
 HD=TRUE
 DV=28d
@@ -200,7 +200,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=26
+H=27
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]MicControl_MicControlPageTitle.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.

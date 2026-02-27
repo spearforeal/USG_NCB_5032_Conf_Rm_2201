@@ -10,7 +10,7 @@ VTProeVer=6.2.02
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]AudioControl_AudioControlPageTitle.ced
 Hint=AudioControlPageTitle (Smart Object ID=24)
-Code=21
+Code=22
 SGControlType=Subpage Reference List Horizontal
 SGControlName=AudioControlPageTitle
 GUID=3E5FA84E-0CC7-475F-B128-0209DBE7BE01
@@ -180,14 +180,14 @@ OutputList3SigType13=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=21
-CedH=21
+Pp1=22
+CedH=22
 SmartObjId=24d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=21
+H=22
 Tp=1
 HD=TRUE
 DV=24d
@@ -200,7 +200,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=21
+H=22
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]AudioControl_AudioControlPageTitle.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.

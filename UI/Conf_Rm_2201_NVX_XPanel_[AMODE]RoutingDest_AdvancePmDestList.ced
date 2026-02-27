@@ -10,7 +10,7 @@ VTProeVer=6.2.02
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[AMODE]RoutingDest_AdvancePmDestList.ced
 Hint=AdvancePmDestList (Smart Object ID=38)
-Code=41
+Code=42
 SGControlType=Subpage Reference List Horizontal
 SGControlName=AdvancePmDestList
 GUID=EA8A0807-D168-4C98-A87C-A20558DB5BA4
@@ -576,14 +576,14 @@ OutputList3SigType52=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=41
-CedH=41
+Pp1=42
+CedH=42
 SmartObjId=38d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=41
+H=42
 Tp=1
 HD=TRUE
 DV=38d
@@ -596,7 +596,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=41
+H=42
 Name=Conf_Rm_2201_NVX_XPanel_[AMODE]RoutingDest_AdvancePmDestList.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.

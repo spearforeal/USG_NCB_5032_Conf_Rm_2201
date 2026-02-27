@@ -4,7 +4,7 @@ Sgntr=SGD
 RelVrs=3
 VTProeVer=6.2.02
 Schema=1
-CRCGUID=339128F4-1FC1-4C48-B174-FDA222A191AA
+CRCGUID=79053694-413C-486A-A6A3-E3590028D472
 ]
 ;================================================================================
 [
@@ -1997,9 +1997,282 @@ CedVer=1
 ;================================================================================
 [
 ObjTp=Symbol
+Name=Conf_Rm_2201_NVX_XPanel_[MODE]CameraControl_CameraSpeedList.ced
+Hint=CameraSpeedList (Smart Object ID=52)
+Code=7
+SGControlType=Subpage Reference List Vertical
+SGControlName=CameraSpeedList
+GUID=D741C765-625B-4FA7-9D27-495B2A6E91A4
+SmplCName=Conf_Rm_2201_NVX_XPanel_[MODE]CameraControl_CameraSpeedList.ced
+SMWRev=4.02.20
+Expand=expand_random
+HelpID=10125
+Render=8
+;Define the number of inputs, outputs and parameters
+MinVariableInputs=4018
+MaxVariableInputs=4018
+MinVariableOutputs=4018
+MaxVariableOutputs=4018
+NumFixedParams=1
+MinVariableInputsList2=14
+MaxVariableInputsList2=14
+MinVariableOutputsList2=14
+MaxVariableOutputsList2=14
+MinVariableInputsList3=14
+MaxVariableInputsList3=14
+MinVariableOutputsList3=14
+MaxVariableOutputsList3=14
+InputSigType1=Digital
+OutputSigType1=Digital
+InputList2SigType1=Analog
+OutputList2SigType1=Analog
+InputList3SigType1=Serial
+OutputList3SigType1=Serial
+
+;Define the cues, and signal types  each input, output and parameter.
+InputCue1=[~UNUSED3~]
+InputSigType1=Digital
+InputCue2=[~UNUSED2~]
+InputSigType2=Digital
+InputCue3=[~UNUSED2~]
+InputSigType3=Digital
+InputCue4=[~UNUSED2~]
+InputSigType4=Digital
+InputCue5=[~UNUSED2~]
+InputSigType5=Digital
+InputCue6=[~UNUSED2~]
+InputSigType6=Digital
+InputCue7=[~UNUSED2~]
+InputSigType7=Digital
+InputCue8=[~UNUSED2~]
+InputSigType8=Digital
+InputCue9=[~UNUSED2~]
+InputSigType9=Digital
+InputCue10=[~UNUSED2~]
+InputSigType10=Digital
+InputCue11=[~BeginGroup~]Enable
+InputSigType11=Digital
+InputCue12=Item 1 Enable
+InputSigType12=Digital
+InputCue13=Item 2 Enable
+InputSigType13=Digital
+InputCue14=[~UNUSED2~]
+InputSigType14=Digital|Analog|Serial|String
+InputCue2012=[~EndGroup~]Enable
+InputSigType2012=Digital
+InputCue2013=[~BeginGroup~]Visible
+InputSigType2013=Digital
+InputCue2014=Item 1 Visible
+InputSigType2014=Digital
+InputCue2015=Item 2 Visible
+InputSigType2015=Digital
+InputCue2016=[~UNUSED2~]
+InputSigType2016=Digital|Analog|Serial|String
+InputCue4014=[~EndGroup~]Visible
+InputSigType4014=Digital
+InputCue4015=[~BeginGroup~]fb
+InputSigType4015=Digital
+InputCue4016=fb1
+InputSigType4016=Digital
+InputCue4017=fb2
+InputSigType4017=Digital
+InputCue4018=[~EndGroup~]fb
+InputSigType4018=Digital
+OutputCue1=Is Moving
+OutputSigType1=Digital
+OutputCue2=[~UNUSED2~]
+OutputSigType2=Digital
+OutputCue3=[~UNUSED2~]
+OutputSigType3=Digital
+OutputCue4=[~UNUSED2~]
+OutputSigType4=Digital
+OutputCue5=[~UNUSED2~]
+OutputSigType5=Digital
+OutputCue6=[~UNUSED2~]
+OutputSigType6=Digital
+OutputCue7=[~UNUSED2~]
+OutputSigType7=Digital
+OutputCue8=[~UNUSED2~]
+OutputSigType8=Digital
+OutputCue9=[~UNUSED2~]
+OutputSigType9=Digital
+OutputCue10=[~UNUSED2~]
+OutputSigType10=Digital
+OutputCue11=[~BeginGroup~]Enable
+OutputSigType11=Digital
+OutputCue12=[~UNUSED3~]
+OutputSigType12=Digital
+OutputCue13=[~UNUSED3~]
+OutputSigType13=Digital
+OutputCue14=[~UNUSED2~]
+OutputSigType14=Digital|Analog|Serial|String
+OutputCue2012=[~EndGroup~]Enable
+OutputSigType2012=Digital
+OutputCue2013=[~BeginGroup~]Visible
+OutputSigType2013=Digital
+OutputCue2014=[~UNUSED3~]
+OutputSigType2014=Digital
+OutputCue2015=[~UNUSED3~]
+OutputSigType2015=Digital
+OutputCue2016=[~UNUSED2~]
+OutputSigType2016=Digital|Analog|Serial|String
+OutputCue4014=[~EndGroup~]Visible
+OutputSigType4014=Digital
+OutputCue4015=[~BeginGroup~]Press
+OutputSigType4015=Digital
+OutputCue4016=press1
+OutputSigType4016=Digital
+OutputCue4017=press2
+OutputSigType4017=Digital
+OutputCue4018=[~EndGroup~]Press
+OutputSigType4018=Digital
+InputList2Cue1=[~UNUSED3~]
+InputList2SigType1=Analog
+InputList2Cue2=Scroll To Item
+InputList2SigType2=Analog
+InputList2Cue3=Set Number of Items
+InputList2SigType3=Analog
+InputList2Cue4=[~UNUSED2~]
+InputList2SigType4=Analog
+InputList2Cue5=[~UNUSED2~]
+InputList2SigType5=Analog
+InputList2Cue6=[~UNUSED2~]
+InputList2SigType6=Analog
+InputList2Cue7=[~UNUSED2~]
+InputList2SigType7=Analog
+InputList2Cue8=[~UNUSED2~]
+InputList2SigType8=Analog
+InputList2Cue9=[~UNUSED2~]
+InputList2SigType9=Analog
+InputList2Cue10=[~UNUSED2~]
+InputList2SigType10=Analog
+InputList2Cue11=[~BeginGroup~]an_fb
+InputList2SigType11=Analog
+InputList2Cue12=an_fb1
+InputList2SigType12=Analog
+InputList2Cue13=an_fb2
+InputList2SigType13=Analog
+InputList2Cue14=[~EndGroup~]an_fb
+InputList2SigType14=Analog
+OutputList2Cue1=Item Clicked
+OutputList2SigType1=Analog
+OutputList2Cue2=[~UNUSED3~]
+OutputList2SigType2=Analog
+OutputList2Cue3=[~UNUSED3~]
+OutputList2SigType3=Analog
+OutputList2Cue4=[~UNUSED2~]
+OutputList2SigType4=Analog
+OutputList2Cue5=[~UNUSED2~]
+OutputList2SigType5=Analog
+OutputList2Cue6=[~UNUSED2~]
+OutputList2SigType6=Analog
+OutputList2Cue7=[~UNUSED2~]
+OutputList2SigType7=Analog
+OutputList2Cue8=[~UNUSED2~]
+OutputList2SigType8=Analog
+OutputList2Cue9=[~UNUSED2~]
+OutputList2SigType9=Analog
+OutputList2Cue10=[~UNUSED2~]
+OutputList2SigType10=Analog
+OutputList2Cue11=[~BeginGroup~]an_act
+OutputList2SigType11=Analog
+OutputList2Cue12=an_act1
+OutputList2SigType12=Analog
+OutputList2Cue13=an_act2
+OutputList2SigType13=Analog
+OutputList2Cue14=[~EndGroup~]an_act
+OutputList2SigType14=Analog
+InputList3Cue1=[~UNUSED2~]
+InputList3SigType1=Serial
+InputList3Cue2=[~UNUSED2~]
+InputList3SigType2=Serial
+InputList3Cue3=[~UNUSED2~]
+InputList3SigType3=Serial
+InputList3Cue4=[~UNUSED2~]
+InputList3SigType4=Serial
+InputList3Cue5=[~UNUSED2~]
+InputList3SigType5=Serial
+InputList3Cue6=[~UNUSED2~]
+InputList3SigType6=Serial
+InputList3Cue7=[~UNUSED2~]
+InputList3SigType7=Serial
+InputList3Cue8=[~UNUSED2~]
+InputList3SigType8=Serial
+InputList3Cue9=[~UNUSED2~]
+InputList3SigType9=Serial
+InputList3Cue10=[~UNUSED2~]
+InputList3SigType10=Serial
+InputList3Cue11=[~BeginGroup~]text-o
+InputList3SigType11=Serial
+InputList3Cue12=text-o1
+InputList3SigType12=Serial
+InputList3Cue13=text-o2
+InputList3SigType13=Serial
+InputList3Cue14=[~EndGroup~]text-o
+InputList3SigType14=Serial
+OutputList3Cue1=[~UNUSED2~]
+OutputList3SigType1=Serial
+OutputList3Cue2=[~UNUSED2~]
+OutputList3SigType2=Serial
+OutputList3Cue3=[~UNUSED2~]
+OutputList3SigType3=Serial
+OutputList3Cue4=[~UNUSED2~]
+OutputList3SigType4=Serial
+OutputList3Cue5=[~UNUSED2~]
+OutputList3SigType5=Serial
+OutputList3Cue6=[~UNUSED2~]
+OutputList3SigType6=Serial
+OutputList3Cue7=[~UNUSED2~]
+OutputList3SigType7=Serial
+OutputList3Cue8=[~UNUSED2~]
+OutputList3SigType8=Serial
+OutputList3Cue9=[~UNUSED2~]
+OutputList3SigType9=Serial
+OutputList3Cue10=[~UNUSED2~]
+OutputList3SigType10=Serial
+OutputList3Cue11=[~BeginGroup~]text-i
+OutputList3SigType11=Serial
+OutputList3Cue12=text-i1
+OutputList3SigType12=Serial
+OutputList3Cue13=text-i2
+OutputList3SigType13=Serial
+OutputList3Cue14=[~EndGroup~]text-i
+OutputList3SigType14=Serial
+ParamCue1=SmartObjectId
+ParamSigType1=Constant
+MPp=1
+Pp1=7
+CedH=7
+SmartObjId=52d
+]
+; Parameter Properties for Smart Object ID
+[
+ObjTp=Dp
+H=7
+Tp=1
+HD=TRUE
+DV=52d
+NF=1
+DNF=1
+EncFmt=0
+DVLF=1
+Sgn=0
+]
+; Smart Objects Definition section
+[
+ObjTp=CED
+H=7
+Name=Conf_Rm_2201_NVX_XPanel_[MODE]CameraControl_CameraSpeedList.ced
+;Cedver is the version of the Smart Graphics control, not the CED file format.
+;If the control definition changes, increment this.
+CedVer=1
+]
+;================================================================================
+[
+ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]Lights&Shade_LightingControlPresetList.ced
 Hint=LightingControlPresetList (Smart Object ID=6)
-Code=7
+Code=8
 SGControlType=Subpage Reference List Horizontal
 SGControlName=LightingControlPresetList
 GUID=38064507-78B5-4E68-90C1-EB9CB7058F0A
@@ -2293,14 +2566,14 @@ OutputList3SigType20=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=7
-CedH=7
+Pp1=8
+CedH=8
 SmartObjId=6d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=7
+H=8
 Tp=1
 HD=TRUE
 DV=6d
@@ -2313,7 +2586,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=7
+H=8
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]Lights&Shade_LightingControlPresetList.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
@@ -2324,7 +2597,7 @@ CedVer=1
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]Lights&Shade_ShadeControlList.ced
 Hint=ShadeControlList (Smart Object ID=8)
-Code=8
+Code=9
 SGControlType=Subpage Reference List Horizontal
 SGControlName=ShadeControlList
 GUID=4FE4D4F3-3C11-47AF-9CEF-C27C07B0A5E0
@@ -2586,14 +2859,14 @@ OutputList3SigType18=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=8
-CedH=8
+Pp1=9
+CedH=9
 SmartObjId=8d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=8
+H=9
 Tp=1
 HD=TRUE
 DV=8d
@@ -2606,7 +2879,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=8
+H=9
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]Lights&Shade_ShadeControlList.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
@@ -2617,7 +2890,7 @@ CedVer=1
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]Lights&Shade_LightControlPageTitle.ced
 Hint=LightControlPageTitle (Smart Object ID=29)
-Code=9
+Code=10
 SGControlType=Subpage Reference List Horizontal
 SGControlName=LightControlPageTitle
 GUID=F07318E1-31DA-4FC6-8039-78E9986E1812
@@ -2787,14 +3060,14 @@ OutputList3SigType13=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=9
-CedH=9
+Pp1=10
+CedH=10
 SmartObjId=29d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=9
+H=10
 Tp=1
 HD=TRUE
 DV=29d
@@ -2807,7 +3080,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=9
+H=10
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]Lights&Shade_LightControlPageTitle.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
@@ -2818,7 +3091,7 @@ CedVer=1
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]Lights&Shade_LightingControlPresetListCombined.ced
 Hint=LightingControlPresetListCombined (Smart Object ID=51)
-Code=10
+Code=11
 SGControlType=Subpage Reference List Horizontal
 SGControlName=LightingControlPresetListCombined
 GUID=5F1EDAC7-9933-449A-8D88-1D3AE0250845
@@ -3112,14 +3385,14 @@ OutputList3SigType20=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=10
-CedH=10
+Pp1=11
+CedH=11
 SmartObjId=51d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=10
+H=11
 Tp=1
 HD=TRUE
 DV=51d
@@ -3132,7 +3405,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=10
+H=11
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]Lights&Shade_LightingControlPresetListCombined.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
@@ -3143,7 +3416,7 @@ CedVer=1
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]Routing_RoutingSourceList.ced
 Hint=RoutingSourceList (Smart Object ID=4)
-Code=11
+Code=12
 SGControlType=Subpage Reference List Vertical
 SGControlName=RoutingSourceList
 GUID=70D87C1A-4C05-4A28-A5B9-E258E0EE487C
@@ -3909,14 +4182,14 @@ OutputList3SigType62=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=11
-CedH=11
+Pp1=12
+CedH=12
 SmartObjId=4d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=11
+H=12
 Tp=1
 HD=TRUE
 DV=4d
@@ -3929,7 +4202,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=11
+H=12
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]Routing_RoutingSourceList.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
@@ -3940,7 +4213,7 @@ CedVer=1
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]Routing_RoutingPageTitle.ced
 Hint=RoutingPageTitle (Smart Object ID=23)
-Code=12
+Code=13
 SGControlType=Subpage Reference List Horizontal
 SGControlName=RoutingPageTitle
 GUID=3AD6C571-7E9B-41D8-A67C-1C9F8A930E40
@@ -4110,14 +4383,14 @@ OutputList3SigType13=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=12
-CedH=12
+Pp1=13
+CedH=13
 SmartObjId=23d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=12
+H=13
 Tp=1
 HD=TRUE
 DV=23d
@@ -4130,7 +4403,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=12
+H=13
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]Routing_RoutingPageTitle.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
@@ -4141,7 +4414,7 @@ CedVer=1
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]Routing_RoutingAudioDest.ced
 Hint=RoutingAudioDest (Smart Object ID=32)
-Code=13
+Code=14
 SGControlType=Subpage Reference List Horizontal
 SGControlName=RoutingAudioDest
 GUID=90A68A65-A93A-4E28-AA5C-7A568F3A2A06
@@ -4327,14 +4600,14 @@ OutputList3SigType14=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=13
-CedH=13
+Pp1=14
+CedH=14
 SmartObjId=32d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=13
+H=14
 Tp=1
 HD=TRUE
 DV=32d
@@ -4347,7 +4620,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=13
+H=14
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]Routing_RoutingAudioDest.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
@@ -4358,7 +4631,7 @@ CedVer=1
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]Routing_RoutingClearButton.ced
 Hint=RoutingClearButton (Smart Object ID=30)
-Code=14
+Code=15
 SGControlType=Subpage Reference List Vertical
 SGControlName=RoutingClearButton
 GUID=537EB28E-98D1-4E62-A526-453D41825549
@@ -4544,14 +4817,14 @@ OutputList3SigType14=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=14
-CedH=14
+Pp1=15
+CedH=15
 SmartObjId=30d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=14
+H=15
 Tp=1
 HD=TRUE
 DV=30d
@@ -4564,7 +4837,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=14
+H=15
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]Routing_RoutingClearButton.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
@@ -4575,7 +4848,7 @@ CedVer=1
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[Header]ModeList_HeaderModeList.ced
 Hint=HeaderModeList (Smart Object ID=1)
-Code=15
+Code=16
 SGControlType=Subpage Reference List Horizontal
 SGControlName=HeaderModeList
 GUID=58697165-3057-4D73-8D93-EB7D16A3DA5F
@@ -4881,14 +5154,14 @@ OutputList3SigType26=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=15
-CedH=15
+Pp1=16
+CedH=16
 SmartObjId=1d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=15
+H=16
 Tp=1
 HD=TRUE
 DV=1d
@@ -4901,7 +5174,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=15
+H=16
 Name=Conf_Rm_2201_NVX_XPanel_[Header]ModeList_HeaderModeList.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
@@ -4912,7 +5185,7 @@ CedVer=1
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]DisplayControl_DisplayControlList.ced
 Hint=DisplayControlList (Smart Object ID=5)
-Code=16
+Code=17
 SGControlType=Subpage Reference List Horizontal
 SGControlName=DisplayControlList
 GUID=89D137F9-D143-42DB-9F2B-FDB308847B54
@@ -5398,14 +5671,14 @@ OutputList3SigType22=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=16
-CedH=16
+Pp1=17
+CedH=17
 SmartObjId=5d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=16
+H=17
 Tp=1
 HD=TRUE
 DV=5d
@@ -5418,7 +5691,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=16
+H=17
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]DisplayControl_DisplayControlList.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
@@ -5429,7 +5702,7 @@ CedVer=1
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]DisplayControl_DisplayControlPresetList.ced
 Hint=DisplayControlPresetList (Smart Object ID=7)
-Code=17
+Code=18
 SGControlType=Subpage Reference List Horizontal
 SGControlName=DisplayControlPresetList
 GUID=685B9797-EA74-4F36-BC02-50E6B0AE1255
@@ -5755,14 +6028,14 @@ OutputList3SigType22=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=17
-CedH=17
+Pp1=18
+CedH=18
 SmartObjId=7d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=17
+H=18
 Tp=1
 HD=TRUE
 DV=7d
@@ -5775,7 +6048,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=17
+H=18
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]DisplayControl_DisplayControlPresetList.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
@@ -5786,7 +6059,7 @@ CedVer=1
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]DisplayControl_DisplayControlPageTitle.ced
 Hint=DisplayControlPageTitle (Smart Object ID=27)
-Code=18
+Code=19
 SGControlType=Subpage Reference List Horizontal
 SGControlName=DisplayControlPageTitle
 GUID=1E58576F-123C-4A7D-8C63-ABC457D28006
@@ -5956,14 +6229,14 @@ OutputList3SigType13=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=18
-CedH=18
+Pp1=19
+CedH=19
 SmartObjId=27d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=18
+H=19
 Tp=1
 HD=TRUE
 DV=27d
@@ -5976,7 +6249,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=18
+H=19
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]DisplayControl_DisplayControlPageTitle.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
@@ -5987,7 +6260,7 @@ CedVer=1
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_Password_Password Keypad.ced
 Hint=Password Keypad (Smart Object ID=12)
-Code=19
+Code=20
 SGControlType=Simple Keypad
 SGControlName=Password Keypad
 GUID=8AC20659-BAD8-4FC9-BC69-625C85AF5FBF
@@ -6061,14 +6334,14 @@ OutputSigType12=Digital
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=19
-CedH=19
+Pp1=20
+CedH=20
 SmartObjId=12d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=19
+H=20
 Tp=1
 HD=TRUE
 DV=12d
@@ -6081,7 +6354,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=19
+H=20
 Name=Conf_Rm_2201_NVX_XPanel_Password_Password Keypad.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
@@ -6092,7 +6365,7 @@ CedVer=1
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]AudioControl_AudioControlList.ced
 Hint=AudioControlList (Smart Object ID=13)
-Code=20
+Code=21
 SGControlType=Subpage Reference List Horizontal
 SGControlName=AudioControlList
 GUID=239D64DF-350C-4B63-906A-DCC598BF570A
@@ -6854,14 +7127,14 @@ OutputList3SigType32=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=20
-CedH=20
+Pp1=21
+CedH=21
 SmartObjId=13d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=20
+H=21
 Tp=1
 HD=TRUE
 DV=13d
@@ -6874,7 +7147,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=20
+H=21
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]AudioControl_AudioControlList.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
@@ -6885,7 +7158,7 @@ CedVer=1
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]AudioControl_AudioControlPageTitle.ced
 Hint=AudioControlPageTitle (Smart Object ID=24)
-Code=21
+Code=22
 SGControlType=Subpage Reference List Horizontal
 SGControlName=AudioControlPageTitle
 GUID=3E5FA84E-0CC7-475F-B128-0209DBE7BE01
@@ -7055,14 +7328,14 @@ OutputList3SigType13=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=21
-CedH=21
+Pp1=22
+CedH=22
 SmartObjId=24d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=21
+H=22
 Tp=1
 HD=TRUE
 DV=24d
@@ -7075,7 +7348,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=21
+H=22
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]AudioControl_AudioControlPageTitle.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
@@ -7086,7 +7359,7 @@ CedVer=1
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[SIDE]ProgramControl_ProgramAudioControl.ced
 Hint=ProgramAudioControl (Smart Object ID=14)
-Code=22
+Code=23
 SGControlType=Subpage Reference List Horizontal
 SGControlName=ProgramAudioControl
 GUID=812B3807-8669-4F09-A9B0-8A8687E59E8F
@@ -7316,14 +7589,14 @@ OutputList3SigType13=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=22
-CedH=22
+Pp1=23
+CedH=23
 SmartObjId=14d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=22
+H=23
 Tp=1
 HD=TRUE
 DV=14d
@@ -7336,7 +7609,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=22
+H=23
 Name=Conf_Rm_2201_NVX_XPanel_[SIDE]ProgramControl_ProgramAudioControl.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
@@ -7347,7 +7620,7 @@ CedVer=1
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[SIDE]MicControls_MicSideControl.ced
 Hint=MicSideControl (Smart Object ID=15)
-Code=23
+Code=24
 SGControlType=Subpage Reference List Horizontal
 SGControlName=MicSideControl
 GUID=DF30B691-8B65-44ED-BB4E-C5A17F0AB1E6
@@ -7577,14 +7850,14 @@ OutputList3SigType13=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=23
-CedH=23
+Pp1=24
+CedH=24
 SmartObjId=15d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=23
+H=24
 Tp=1
 HD=TRUE
 DV=15d
@@ -7597,7 +7870,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=23
+H=24
 Name=Conf_Rm_2201_NVX_XPanel_[SIDE]MicControls_MicSideControl.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
@@ -7608,7 +7881,7 @@ CedVer=1
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]AudioControlSubMenu_AudioSideMenu.ced
 Hint=AudioSideMenu (Smart Object ID=16)
-Code=24
+Code=25
 SGControlType=Subpage Reference List Vertical
 SGControlName=AudioSideMenu
 GUID=8D68CC75-53B6-4BFA-AA17-C67F0B44594E
@@ -7854,14 +8127,14 @@ OutputList3SigType17=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=24
-CedH=24
+Pp1=25
+CedH=25
 SmartObjId=16d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=24
+H=25
 Tp=1
 HD=TRUE
 DV=16d
@@ -7874,7 +8147,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=24
+H=25
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]AudioControlSubMenu_AudioSideMenu.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
@@ -7885,7 +8158,7 @@ CedVer=1
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]MicControl_MicControlList.ced
 Hint=MicControlList (Smart Object ID=17)
-Code=25
+Code=26
 SGControlType=Subpage Reference List Horizontal
 SGControlName=MicControlList
 GUID=571D8B8C-D6D6-48C5-8AC4-CB0B500FAE6A
@@ -8647,14 +8920,14 @@ OutputList3SigType32=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=25
-CedH=25
+Pp1=26
+CedH=26
 SmartObjId=17d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=25
+H=26
 Tp=1
 HD=TRUE
 DV=17d
@@ -8667,7 +8940,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=25
+H=26
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]MicControl_MicControlList.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
@@ -8678,7 +8951,7 @@ CedVer=1
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]MicControl_MicControlPageTitle.ced
 Hint=MicControlPageTitle (Smart Object ID=28)
-Code=26
+Code=27
 SGControlType=Subpage Reference List Horizontal
 SGControlName=MicControlPageTitle
 GUID=C65BCC7F-4D21-43B6-B418-6B3252E41969
@@ -8848,14 +9121,14 @@ OutputList3SigType13=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=26
-CedH=26
+Pp1=27
+CedH=27
 SmartObjId=28d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=26
+H=27
 Tp=1
 HD=TRUE
 DV=28d
@@ -8868,7 +9141,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=26
+H=27
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]MicControl_MicControlPageTitle.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
@@ -8879,7 +9152,7 @@ CedVer=1
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]ATC_ATCKeypad.ced
 Hint=ATCKeypad (Smart Object ID=19)
-Code=27
+Code=28
 SGControlType=Simple Keypad
 SGControlName=ATCKeypad
 GUID=4B48E24C-2612-42A8-BB5F-DF4A38C502F4
@@ -8953,14 +9226,14 @@ OutputSigType12=Digital
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=27
-CedH=27
+Pp1=28
+CedH=28
 SmartObjId=19d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=27
+H=28
 Tp=1
 HD=TRUE
 DV=19d
@@ -8973,7 +9246,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=27
+H=28
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]ATC_ATCKeypad.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
@@ -8984,7 +9257,7 @@ CedVer=1
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]ATC_ATCRecentCallList.ced
 Hint=ATCRecentCallList (Smart Object ID=20)
-Code=28
+Code=29
 SGControlType=Dynamic Button List Vertical
 SGControlName=ATCRecentCallList
 GUID=8E8384A6-8A88-4841-8133-5B98C907319C
@@ -9450,14 +9723,14 @@ OutputList3SigType4014=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=28
-CedH=28
+Pp1=29
+CedH=29
 SmartObjId=20d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=28
+H=29
 Tp=1
 HD=TRUE
 DV=20d
@@ -9470,7 +9743,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=28
+H=29
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]ATC_ATCRecentCallList.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
@@ -9481,7 +9754,7 @@ CedVer=1
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]ATC_ATCMicMuteButton.ced
 Hint=ATCMicMuteButton (Smart Object ID=21)
-Code=29
+Code=30
 SGControlType=Subpage Reference List Horizontal
 SGControlName=ATCMicMuteButton
 GUID=A60E5241-18E6-41F2-8709-E6F0D2DA07A0
@@ -9611,14 +9884,14 @@ OutputList2SigType3=Analog
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=29
-CedH=29
+Pp1=30
+CedH=30
 SmartObjId=21d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=29
+H=30
 Tp=1
 HD=TRUE
 DV=21d
@@ -9631,7 +9904,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=29
+H=30
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]ATC_ATCMicMuteButton.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
@@ -9642,7 +9915,7 @@ CedVer=1
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]ATC_ATCControlPageTitle.ced
 Hint=ATCControlPageTitle (Smart Object ID=25)
-Code=30
+Code=31
 SGControlType=Subpage Reference List Horizontal
 SGControlName=ATCControlPageTitle
 GUID=8B3D3543-0B8F-4C6E-8687-3DB592000687
@@ -9812,14 +10085,14 @@ OutputList3SigType13=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=30
-CedH=30
+Pp1=31
+CedH=31
 SmartObjId=25d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=30
+H=31
 Tp=1
 HD=TRUE
 DV=25d
@@ -9832,7 +10105,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=30
+H=31
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]ATC_ATCControlPageTitle.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
@@ -9843,7 +10116,7 @@ CedVer=1
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[SIDE]ATCControl_SideATCAudioControl.ced
 Hint=SideATCAudioControl (Smart Object ID=22)
-Code=31
+Code=32
 SGControlType=Subpage Reference List Horizontal
 SGControlName=SideATCAudioControl
 GUID=5293FDA7-0574-4BE4-B861-55E11777252D
@@ -10073,14 +10346,14 @@ OutputList3SigType13=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=31
-CedH=31
+Pp1=32
+CedH=32
 SmartObjId=22d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=31
+H=32
 Tp=1
 HD=TRUE
 DV=22d
@@ -10093,7 +10366,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=31
+H=32
 Name=Conf_Rm_2201_NVX_XPanel_[SIDE]ATCControl_SideATCAudioControl.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
@@ -10104,7 +10377,7 @@ CedVer=1
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]RoutingPresets_RoutingPesets.ced
 Hint=RoutingPesets (Smart Object ID=31)
-Code=32
+Code=33
 SGControlType=Subpage Reference List Horizontal
 SGControlName=RoutingPesets
 GUID=DB706E70-EAAB-4B75-88C9-A6A54728260F
@@ -10350,14 +10623,14 @@ OutputList3SigType17=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=32
-CedH=32
+Pp1=33
+CedH=33
 SmartObjId=31d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=32
+H=33
 Tp=1
 HD=TRUE
 DV=31d
@@ -10370,7 +10643,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=32
+H=33
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]RoutingPresets_RoutingPesets.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
@@ -10381,7 +10654,7 @@ CedVer=1
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]RoutingDest_RoutingDestList Hori.ced
 Hint=RoutingDestList Hori (Smart Object ID=9)
-Code=33
+Code=34
 SGControlType=Subpage Reference List Horizontal
 SGControlName=RoutingDestList Hori
 GUID=FBA7DDDE-4652-425E-A46B-E85CBFC6C003
@@ -10947,14 +11220,14 @@ OutputList3SigType52=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=33
-CedH=33
+Pp1=34
+CedH=34
 SmartObjId=9d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=33
+H=34
 Tp=1
 HD=TRUE
 DV=9d
@@ -10967,7 +11240,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=33
+H=34
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]RoutingDest_RoutingDestList Hori.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
@@ -10978,7 +11251,7 @@ CedVer=1
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]Advance_AdvanceModeList.ced
 Hint=AdvanceModeList (Smart Object ID=33)
-Code=34
+Code=35
 SGControlType=Subpage Reference List Vertical
 SGControlName=AdvanceModeList
 GUID=C5DD0BA7-5C09-4270-8D84-349F6116725C
@@ -11244,14 +11517,14 @@ OutputList3SigType22=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=34
-CedH=34
+Pp1=35
+CedH=35
 SmartObjId=33d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=34
+H=35
 Tp=1
 HD=TRUE
 DV=33d
@@ -11264,7 +11537,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=34
+H=35
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]Advance_AdvanceModeList.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
@@ -11275,7 +11548,7 @@ CedVer=1
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[AMODE]PresetManager_AdvancePresetList.ced
 Hint=AdvancePresetList (Smart Object ID=35)
-Code=35
+Code=36
 SGControlType=Subpage Reference List Vertical
 SGControlName=AdvancePresetList
 GUID=C395D619-3F82-4469-8C7D-2BFE986D24D7
@@ -11521,14 +11794,14 @@ OutputList3SigType17=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=35
-CedH=35
+Pp1=36
+CedH=36
 SmartObjId=35d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=35
+H=36
 Tp=1
 HD=TRUE
 DV=35d
@@ -11541,7 +11814,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=35
+H=36
 Name=Conf_Rm_2201_NVX_XPanel_[AMODE]PresetManager_AdvancePresetList.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
@@ -11552,7 +11825,7 @@ CedVer=1
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[AMODE]PresetManager_PresetManagerCtrlsRight.ced
 Hint=PresetManagerCtrlsRight (Smart Object ID=34)
-Code=36
+Code=37
 SGControlType=Subpage Reference List Vertical
 SGControlName=PresetManagerCtrlsRight
 GUID=6D1A6D2F-42B4-49AF-A5C3-557E8A14527E
@@ -11766,14 +12039,14 @@ OutputList3SigType15=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=36
-CedH=36
+Pp1=37
+CedH=37
 SmartObjId=34d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=36
+H=37
 Tp=1
 HD=TRUE
 DV=34d
@@ -11786,7 +12059,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=36
+H=37
 Name=Conf_Rm_2201_NVX_XPanel_[AMODE]PresetManager_PresetManagerCtrlsRight.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
@@ -11797,7 +12070,7 @@ CedVer=1
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[AMODE]PresetManager_PMSourceList.ced
 Hint=PMSourceList (Smart Object ID=36)
-Code=37
+Code=38
 SGControlType=Subpage Reference List Vertical
 SGControlName=PMSourceList
 GUID=66D5A92A-6FCC-419D-B561-1D2FC544D5E3
@@ -12563,14 +12836,14 @@ OutputList3SigType62=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=37
-CedH=37
+Pp1=38
+CedH=38
 SmartObjId=36d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=37
+H=38
 Tp=1
 HD=TRUE
 DV=36d
@@ -12583,7 +12856,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=37
+H=38
 Name=Conf_Rm_2201_NVX_XPanel_[AMODE]PresetManager_PMSourceList.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
@@ -12594,7 +12867,7 @@ CedVer=1
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[AMODE]PresetManager_PMClearButton.ced
 Hint=PMClearButton (Smart Object ID=37)
-Code=38
+Code=39
 SGControlType=Subpage Reference List Vertical
 SGControlName=PMClearButton
 GUID=D81A6A82-C8A9-45E3-88B7-2848355212D6
@@ -12780,14 +13053,14 @@ OutputList3SigType14=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=38
-CedH=38
+Pp1=39
+CedH=39
 SmartObjId=37d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=38
+H=39
 Tp=1
 HD=TRUE
 DV=37d
@@ -12800,7 +13073,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=38
+H=39
 Name=Conf_Rm_2201_NVX_XPanel_[AMODE]PresetManager_PMClearButton.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
@@ -12811,7 +13084,7 @@ CedVer=1
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[AMODE]PresetManager_PresetManagerCtrlsLeft.ced
 Hint=PresetManagerCtrlsLeft (Smart Object ID=39)
-Code=39
+Code=40
 SGControlType=Subpage Reference List Vertical
 SGControlName=PresetManagerCtrlsLeft
 GUID=A2842876-DCFD-4758-BE3A-1932F61FB29F
@@ -13041,14 +13314,14 @@ OutputList3SigType16=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=39
-CedH=39
+Pp1=40
+CedH=40
 SmartObjId=39d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=39
+H=40
 Tp=1
 HD=TRUE
 DV=39d
@@ -13061,7 +13334,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=39
+H=40
 Name=Conf_Rm_2201_NVX_XPanel_[AMODE]PresetManager_PresetManagerCtrlsLeft.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
@@ -13072,7 +13345,7 @@ CedVer=1
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[AMODE]PresetManager_WPPresetList.ced
 Hint=WPPresetList (Smart Object ID=40)
-Code=40
+Code=41
 SGControlType=Subpage Reference List Horizontal
 SGControlName=WPPresetList
 GUID=0E7C42E2-6D8A-4CC2-AB25-96966AD22A00
@@ -13350,14 +13623,14 @@ OutputList3SigType19=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=40
-CedH=40
+Pp1=41
+CedH=41
 SmartObjId=40d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=40
+H=41
 Tp=1
 HD=TRUE
 DV=40d
@@ -13370,7 +13643,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=40
+H=41
 Name=Conf_Rm_2201_NVX_XPanel_[AMODE]PresetManager_WPPresetList.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
@@ -13381,7 +13654,7 @@ CedVer=1
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[AMODE]RoutingDest_AdvancePmDestList.ced
 Hint=AdvancePmDestList (Smart Object ID=38)
-Code=41
+Code=42
 SGControlType=Subpage Reference List Horizontal
 SGControlName=AdvancePmDestList
 GUID=EA8A0807-D168-4C98-A87C-A20558DB5BA4
@@ -13947,14 +14220,14 @@ OutputList3SigType52=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=41
-CedH=41
+Pp1=42
+CedH=42
 SmartObjId=38d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=41
+H=42
 Tp=1
 HD=TRUE
 DV=38d
@@ -13967,7 +14240,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=41
+H=42
 Name=Conf_Rm_2201_NVX_XPanel_[AMODE]RoutingDest_AdvancePmDestList.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
@@ -13978,7 +14251,7 @@ CedVer=1
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[PM]FullScreen_PMFullScreen.ced
 Hint=PMFullScreen (Smart Object ID=41)
-Code=42
+Code=43
 SGControlType=Subpage Reference List Horizontal
 SGControlName=PMFullScreen
 GUID=93F1802F-7641-4489-8DAF-00B2A0C5EE52
@@ -14164,14 +14437,14 @@ OutputList3SigType14=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=42
-CedH=42
+Pp1=43
+CedH=43
 SmartObjId=41d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=42
+H=43
 Tp=1
 HD=TRUE
 DV=41d
@@ -14184,7 +14457,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=42
+H=43
 Name=Conf_Rm_2201_NVX_XPanel_[PM]FullScreen_PMFullScreen.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
@@ -14195,7 +14468,7 @@ CedVer=1
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[PM]2x2_PM2x2.ced
 Hint=PM2x2 (Smart Object ID=42)
-Code=43
+Code=44
 SGControlType=Subpage Reference List Horizontal
 SGControlName=PM2x2
 GUID=30B8580D-92F7-4E9F-B7BF-1F7A5142CD88
@@ -14417,14 +14690,14 @@ OutputList3SigType20=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=43
-CedH=43
+Pp1=44
+CedH=44
 SmartObjId=42d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=43
+H=44
 Tp=1
 HD=TRUE
 DV=42d
@@ -14437,7 +14710,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=43
+H=44
 Name=Conf_Rm_2201_NVX_XPanel_[PM]2x2_PM2x2.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
@@ -14448,7 +14721,7 @@ CedVer=1
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[PM]1x2_PM1x2.ced
 Hint=PM1x2 (Smart Object ID=43)
-Code=44
+Code=45
 SGControlType=Subpage Reference List Horizontal
 SGControlName=PM1x2
 GUID=2C780DD6-784A-4B00-AFE7-89F154817E82
@@ -14658,14 +14931,14 @@ OutputList3SigType18=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=44
-CedH=44
+Pp1=45
+CedH=45
 SmartObjId=43d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=44
+H=45
 Tp=1
 HD=TRUE
 DV=43d
@@ -14678,7 +14951,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=44
+H=45
 Name=Conf_Rm_2201_NVX_XPanel_[PM]1x2_PM1x2.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
@@ -14689,7 +14962,7 @@ CedVer=1
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[PM]1x3Vert_[PM]1x3Vert.ced
 Hint=[PM]1x3Vert (Smart Object ID=44)
-Code=45
+Code=46
 SGControlType=Subpage Reference List Horizontal
 SGControlName=[PM]1x3Vert
 GUID=05913BB4-B341-4BE2-99DC-51D657AAADA0
@@ -14911,14 +15184,14 @@ OutputList3SigType20=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=45
-CedH=45
+Pp1=46
+CedH=46
 SmartObjId=44d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=45
+H=46
 Tp=1
 HD=TRUE
 DV=44d
@@ -14931,7 +15204,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=45
+H=46
 Name=Conf_Rm_2201_NVX_XPanel_[PM]1x3Vert_[PM]1x3Vert.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
@@ -14942,7 +15215,7 @@ CedVer=1
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[PM]2x1_[PM]2x1.ced
 Hint=[PM]2x1 (Smart Object ID=45)
-Code=46
+Code=47
 SGControlType=Subpage Reference List Horizontal
 SGControlName=[PM]2x1
 GUID=382CD3D7-4225-45C0-BEF9-4B5F0C074FBD
@@ -15152,14 +15425,14 @@ OutputList3SigType18=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=46
-CedH=46
+Pp1=47
+CedH=47
 SmartObjId=45d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=46
+H=47
 Tp=1
 HD=TRUE
 DV=45d
@@ -15172,7 +15445,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=46
+H=47
 Name=Conf_Rm_2201_NVX_XPanel_[PM]2x1_[PM]2x1.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
@@ -15183,7 +15456,7 @@ CedVer=1
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[PM]PnP_[PM]PnP.ced
 Hint=[PM]PnP (Smart Object ID=46)
-Code=47
+Code=48
 SGControlType=Subpage Reference List Horizontal
 SGControlName=[PM]PnP
 GUID=25C43ACD-389E-4BB3-900A-1E94248FA21B
@@ -15381,14 +15654,14 @@ OutputList3SigType16=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=47
-CedH=47
+Pp1=48
+CedH=48
 SmartObjId=46d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=47
+H=48
 Tp=1
 HD=TRUE
 DV=46d
@@ -15401,7 +15674,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=47
+H=48
 Name=Conf_Rm_2201_NVX_XPanel_[PM]PnP_[PM]PnP.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
@@ -15412,7 +15685,7 @@ CedVer=1
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[PM]1x1_[PM]1x1.ced
 Hint=[PM]1x1 (Smart Object ID=47)
-Code=48
+Code=49
 SGControlType=Subpage Reference List Horizontal
 SGControlName=[PM]1x1
 GUID=B43AB756-9978-40FB-9448-2ED8F37EB491
@@ -15610,14 +15883,14 @@ OutputList3SigType16=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=48
-CedH=48
+Pp1=49
+CedH=49
 SmartObjId=47d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=48
+H=49
 Tp=1
 HD=TRUE
 DV=47d
@@ -15630,7 +15903,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=48
+H=49
 Name=Conf_Rm_2201_NVX_XPanel_[PM]1x1_[PM]1x1.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
@@ -15641,7 +15914,7 @@ CedVer=1
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[SYS]PasswordLock_PasswordLockButton.ced
 Hint=PasswordLockButton (Smart Object ID=48)
-Code=49
+Code=50
 SGControlType=Subpage Reference List Horizontal
 SGControlName=PasswordLockButton
 GUID=735649FA-8845-4DF9-ACCD-E7A3F8954FC4
@@ -15771,14 +16044,14 @@ OutputList2SigType3=Analog
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=49
-CedH=49
+Pp1=50
+CedH=50
 SmartObjId=48d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=49
+H=50
 Tp=1
 HD=TRUE
 DV=48d
@@ -15791,7 +16064,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=49
+H=50
 Name=Conf_Rm_2201_NVX_XPanel_[SYS]PasswordLock_PasswordLockButton.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
@@ -15802,7 +16075,7 @@ CedVer=1
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[SYS]RoomMode_RoomModeSelectList.ced
 Hint=RoomModeSelectList (Smart Object ID=49)
-Code=50
+Code=51
 SGControlType=Subpage Reference List Horizontal
 SGControlName=RoomModeSelectList
 GUID=05270B1D-4661-4512-810B-0B0A419A405D
@@ -15992,14 +16265,14 @@ OutputList3SigType14=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=50
-CedH=50
+Pp1=51
+CedH=51
 SmartObjId=49d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=50
+H=51
 Tp=1
 HD=TRUE
 DV=49d
@@ -16012,7 +16285,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=50
+H=51
 Name=Conf_Rm_2201_NVX_XPanel_[SYS]RoomMode_RoomModeSelectList.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
@@ -16023,7 +16296,7 @@ CedVer=1
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[AMODE]Mixer_MixerCtrlsLeft.ced
 Hint=MixerCtrlsLeft (Smart Object ID=50)
-Code=51
+Code=52
 SGControlType=Subpage Reference List Vertical
 SGControlName=MixerCtrlsLeft
 GUID=6A39A4AA-4C55-494C-960F-13CC71882668
@@ -16253,14 +16526,14 @@ OutputList3SigType16=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=51
-CedH=51
+Pp1=52
+CedH=52
 SmartObjId=50d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=51
+H=52
 Tp=1
 HD=TRUE
 DV=50d
@@ -16273,7 +16546,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=51
+H=52
 Name=Conf_Rm_2201_NVX_XPanel_[AMODE]Mixer_MixerCtrlsLeft.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.

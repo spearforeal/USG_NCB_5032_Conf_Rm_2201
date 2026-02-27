@@ -10,7 +10,7 @@ VTProeVer=6.2.02
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]RoutingPresets_RoutingPesets.ced
 Hint=RoutingPesets (Smart Object ID=31)
-Code=32
+Code=33
 SGControlType=Subpage Reference List Horizontal
 SGControlName=RoutingPesets
 GUID=DB706E70-EAAB-4B75-88C9-A6A54728260F
@@ -256,14 +256,14 @@ OutputList3SigType17=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=32
-CedH=32
+Pp1=33
+CedH=33
 SmartObjId=31d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=32
+H=33
 Tp=1
 HD=TRUE
 DV=31d
@@ -276,7 +276,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=32
+H=33
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]RoutingPresets_RoutingPesets.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.

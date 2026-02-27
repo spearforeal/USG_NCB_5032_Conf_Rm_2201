@@ -10,7 +10,7 @@ VTProeVer=6.2.02
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]ATC_ATCMicMuteButton.ced
 Hint=ATCMicMuteButton (Smart Object ID=21)
-Code=29
+Code=30
 SGControlType=Subpage Reference List Horizontal
 SGControlName=ATCMicMuteButton
 GUID=A60E5241-18E6-41F2-8709-E6F0D2DA07A0
@@ -140,14 +140,14 @@ OutputList2SigType3=Analog
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=29
-CedH=29
+Pp1=30
+CedH=30
 SmartObjId=21d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=29
+H=30
 Tp=1
 HD=TRUE
 DV=21d
@@ -160,7 +160,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=29
+H=30
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]ATC_ATCMicMuteButton.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.

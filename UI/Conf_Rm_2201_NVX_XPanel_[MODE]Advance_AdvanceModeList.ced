@@ -10,7 +10,7 @@ VTProeVer=6.2.02
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]Advance_AdvanceModeList.ced
 Hint=AdvanceModeList (Smart Object ID=33)
-Code=34
+Code=35
 SGControlType=Subpage Reference List Vertical
 SGControlName=AdvanceModeList
 GUID=C5DD0BA7-5C09-4270-8D84-349F6116725C
@@ -276,14 +276,14 @@ OutputList3SigType22=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=34
-CedH=34
+Pp1=35
+CedH=35
 SmartObjId=33d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=34
+H=35
 Tp=1
 HD=TRUE
 DV=33d
@@ -296,7 +296,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=34
+H=35
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]Advance_AdvanceModeList.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.

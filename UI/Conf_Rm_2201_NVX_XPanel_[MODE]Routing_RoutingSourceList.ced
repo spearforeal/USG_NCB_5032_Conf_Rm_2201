@@ -10,7 +10,7 @@ VTProeVer=6.2.02
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]Routing_RoutingSourceList.ced
 Hint=RoutingSourceList (Smart Object ID=4)
-Code=11
+Code=12
 SGControlType=Subpage Reference List Vertical
 SGControlName=RoutingSourceList
 GUID=70D87C1A-4C05-4A28-A5B9-E258E0EE487C
@@ -776,14 +776,14 @@ OutputList3SigType62=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=11
-CedH=11
+Pp1=12
+CedH=12
 SmartObjId=4d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=11
+H=12
 Tp=1
 HD=TRUE
 DV=4d
@@ -796,7 +796,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=11
+H=12
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]Routing_RoutingSourceList.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.

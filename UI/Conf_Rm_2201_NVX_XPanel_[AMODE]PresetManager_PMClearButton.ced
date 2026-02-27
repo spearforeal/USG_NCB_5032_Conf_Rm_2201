@@ -10,7 +10,7 @@ VTProeVer=6.2.02
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[AMODE]PresetManager_PMClearButton.ced
 Hint=PMClearButton (Smart Object ID=37)
-Code=38
+Code=39
 SGControlType=Subpage Reference List Vertical
 SGControlName=PMClearButton
 GUID=D81A6A82-C8A9-45E3-88B7-2848355212D6
@@ -196,14 +196,14 @@ OutputList3SigType14=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=38
-CedH=38
+Pp1=39
+CedH=39
 SmartObjId=37d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=38
+H=39
 Tp=1
 HD=TRUE
 DV=37d
@@ -216,7 +216,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=38
+H=39
 Name=Conf_Rm_2201_NVX_XPanel_[AMODE]PresetManager_PMClearButton.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.

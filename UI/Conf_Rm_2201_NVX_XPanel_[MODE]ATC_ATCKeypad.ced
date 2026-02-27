@@ -10,7 +10,7 @@ VTProeVer=6.2.02
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]ATC_ATCKeypad.ced
 Hint=ATCKeypad (Smart Object ID=19)
-Code=27
+Code=28
 SGControlType=Simple Keypad
 SGControlName=ATCKeypad
 GUID=4B48E24C-2612-42A8-BB5F-DF4A38C502F4
@@ -84,14 +84,14 @@ OutputSigType12=Digital
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=27
-CedH=27
+Pp1=28
+CedH=28
 SmartObjId=19d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=27
+H=28
 Tp=1
 HD=TRUE
 DV=19d
@@ -104,7 +104,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=27
+H=28
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]ATC_ATCKeypad.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.

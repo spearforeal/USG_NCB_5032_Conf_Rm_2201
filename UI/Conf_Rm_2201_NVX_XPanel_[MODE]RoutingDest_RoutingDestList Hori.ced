@@ -10,7 +10,7 @@ VTProeVer=6.2.02
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]RoutingDest_RoutingDestList Hori.ced
 Hint=RoutingDestList Hori (Smart Object ID=9)
-Code=33
+Code=34
 SGControlType=Subpage Reference List Horizontal
 SGControlName=RoutingDestList Hori
 GUID=FBA7DDDE-4652-425E-A46B-E85CBFC6C003
@@ -576,14 +576,14 @@ OutputList3SigType52=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=33
-CedH=33
+Pp1=34
+CedH=34
 SmartObjId=9d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=33
+H=34
 Tp=1
 HD=TRUE
 DV=9d
@@ -596,7 +596,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=33
+H=34
 Name=Conf_Rm_2201_NVX_XPanel_[MODE]RoutingDest_RoutingDestList Hori.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.

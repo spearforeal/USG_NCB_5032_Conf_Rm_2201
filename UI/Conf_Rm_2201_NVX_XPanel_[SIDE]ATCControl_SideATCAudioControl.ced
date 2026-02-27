@@ -10,7 +10,7 @@ VTProeVer=6.2.02
 ObjTp=Symbol
 Name=Conf_Rm_2201_NVX_XPanel_[SIDE]ATCControl_SideATCAudioControl.ced
 Hint=SideATCAudioControl (Smart Object ID=22)
-Code=31
+Code=32
 SGControlType=Subpage Reference List Horizontal
 SGControlName=SideATCAudioControl
 GUID=5293FDA7-0574-4BE4-B861-55E11777252D
@@ -240,14 +240,14 @@ OutputList3SigType13=Serial
 ParamCue1=SmartObjectId
 ParamSigType1=Constant
 MPp=1
-Pp1=31
-CedH=31
+Pp1=32
+CedH=32
 SmartObjId=22d
 ]
 ; Parameter Properties for Smart Object ID
 [
 ObjTp=Dp
-H=31
+H=32
 Tp=1
 HD=TRUE
 DV=22d
@@ -260,7 +260,7 @@ Sgn=0
 ; Smart Objects Definition section
 [
 ObjTp=CED
-H=31
+H=32
 Name=Conf_Rm_2201_NVX_XPanel_[SIDE]ATCControl_SideATCAudioControl.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
